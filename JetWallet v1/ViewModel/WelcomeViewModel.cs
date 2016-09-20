@@ -3,11 +3,11 @@ using System.Windows.Media;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
-using JetWallet_v1.Resources;
-using JetWallet_v1.View;
-using JetWallet_v1.Tools;
+using JetWallet.Resources;
+using JetWallet.View;
+using JetWallet.Tools;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class WelcomeViewModel : ViewModelBase

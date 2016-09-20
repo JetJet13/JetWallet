@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JetWallet v1", "JetWallet v1\JetWallet v1.csproj", "{8F931C2E-9D63-4677-973D-08509040846B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JetWallet", "JetWallet v1\JetWallet.csproj", "{8F931C2E-9D63-4677-973D-08509040846B}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "JetWalletSetup", "JetWalletSetup\JetWalletSetup.vdproj", "{0BB6BF39-3468-4212-82A7-E93BFA530601}"
 EndProject

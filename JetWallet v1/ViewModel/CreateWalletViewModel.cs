@@ -6,9 +6,9 @@ using System.Windows.Media;
 using System.Collections;
 using System.Security;
 using System.Diagnostics;
-using JetWallet_v1.Tools;
-using JetWallet_v1.Model;
-using JetWallet_v1.View;
+using JetWallet.Tools;
+using JetWallet.Model;
+using JetWallet.View;
 using MahApps.Metro;
 using MahApps.Metro.Controls.Dialogs;
 using NBitcoin;
@@ -18,7 +18,7 @@ using NBitcoin.Protocol;
 using NBitcoin.Protocol.Behaviors;
 using System.Threading.Tasks;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
    
     public class CreateWalletViewModel : ViewModelBase

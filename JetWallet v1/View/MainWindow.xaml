@@ -1,4 +1,4 @@
-﻿<Controls:MetroWindow x:Class="JetWallet_v1.View.MainWindow"
+﻿<Controls:MetroWindow x:Class="JetWallet.View.MainWindow"
         x:Name="MainWin"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

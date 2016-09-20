@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JetWallet_v1.Tools
+namespace JetWallet.Tools
 {
     class CheckNetwork
     {

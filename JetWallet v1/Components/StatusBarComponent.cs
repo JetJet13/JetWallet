@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 using System.Net;
 using System.IO;
 using System.Diagnostics;
-using JetWallet_v1.Tools;
-using JetWallet_v1.Model;
+using JetWallet.Tools;
+using JetWallet.Model;
 using NBitcoin;
 using GalaSoft.MvvmLight.Messaging;
 
-namespace JetWallet_v1.Components
+namespace JetWallet.Components
 {
     class ExchangeRates
     {

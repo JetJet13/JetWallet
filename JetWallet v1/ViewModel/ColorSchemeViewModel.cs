@@ -1,10 +1,10 @@
 ﻿using GalaSoft.MvvmLight;
 using System;
 using System.Windows.Media;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 using GalaSoft.MvvmLight.Messaging;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class ColorSchemeViewModel : ViewModelBase

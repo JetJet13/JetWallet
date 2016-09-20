@@ -9,7 +9,7 @@ using System.Drawing;
 using NBitcoin;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
-namespace JetWallet_v1.Tools
+namespace JetWallet.Tools
 {
     public class Converters
     {

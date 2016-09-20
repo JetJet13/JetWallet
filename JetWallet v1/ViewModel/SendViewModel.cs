@@ -1,8 +1,8 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Messaging;
-using JetWallet_v1.Tools;
-using JetWallet_v1.View;
-using JetWallet_v1.Model;
+using JetWallet.Tools;
+using JetWallet.View;
+using JetWallet.Model;
 using MahApps.Metro.Controls.Dialogs;
 using System.Windows.Media;
 using GalaSoft.MvvmLight.Command;
@@ -17,7 +17,7 @@ using NBitcoin.SPV;
 using NBitcoin.Protocol;
 using NBitcoin.Protocol.Behaviors;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
     
     public class SendViewModel : ViewModelBase

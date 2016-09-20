@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 using System.Diagnostics;
 using System.ComponentModel;
 
-namespace JetWallet_v1.Model
+namespace JetWallet.Model
 {
     public enum TxState
     {

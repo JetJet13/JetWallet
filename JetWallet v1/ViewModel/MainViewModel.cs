@@ -8,17 +8,17 @@ using Microsoft.Win32;
 using GalaSoft.MvvmLight.Messaging;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight;
-using JetWallet_v1.Model;
-using JetWallet_v1.Tools;
-using JetWallet_v1.View;
-using JetWallet_v1.Components;
+using JetWallet.Model;
+using JetWallet.Tools;
+using JetWallet.View;
+using JetWallet.Components;
 using MahApps.Metro.Controls.Dialogs;
 using NBitcoin;
 using System.Threading.Tasks;
 using System.Windows;
 using NBitcoin.SPV;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class MainViewModel : ViewModelBase

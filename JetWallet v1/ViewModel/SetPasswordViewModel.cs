@@ -6,11 +6,11 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
 using MahApps.Metro.Controls.Dialogs;
-using JetWallet_v1.View;
-using JetWallet_v1.Tools;
-using JetWallet_v1.Model;
+using JetWallet.View;
+using JetWallet.Tools;
+using JetWallet.Model;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class SetPasswordViewModel : ViewModelBase

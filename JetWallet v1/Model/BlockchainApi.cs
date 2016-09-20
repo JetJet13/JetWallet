@@ -1,4 +1,4 @@
-﻿using JetWallet_v1.Tools;
+﻿using JetWallet.Tools;
 using NBitcoin;
 using Newtonsoft.Json;
 using System;
@@ -10,7 +10,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JetWallet_v1.Model
+namespace JetWallet.Model
 {
 
     public class SoChainTxAPI

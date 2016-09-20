@@ -5,15 +5,15 @@ using System.Security;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
-using JetWallet_v1.View;
-using JetWallet_v1.Tools;
+using JetWallet.View;
+using JetWallet.Tools;
 using MahApps.Metro.Controls.Dialogs;
 using System.IO;
-using JetWallet_v1.Model;
+using JetWallet.Model;
 using System.ComponentModel;
 using System.Threading.Tasks;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class ManageWalletViewModel : ViewModelBase

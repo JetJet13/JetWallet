@@ -6,13 +6,13 @@ using System.Diagnostics;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Messaging;
 using GalaSoft.MvvmLight.Command;
-using JetWallet_v1.Tools;
-using JetWallet_v1.Model;
-using JetWallet_v1.View;
+using JetWallet.Tools;
+using JetWallet.Model;
+using JetWallet.View;
 using MahApps.Metro.Controls.Dialogs;
 
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class PromptPasswordViewModel : ViewModelBase

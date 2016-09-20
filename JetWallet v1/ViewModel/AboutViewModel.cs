@@ -1,12 +1,12 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
-using JetWallet_v1.Tools;
-using JetWallet_v1.View;
+using JetWallet.Tools;
+using JetWallet.View;
 using System.Windows;
 using System.Windows.Media;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
     /// <summary>
     /// This class contains properties that a View can data bind to.

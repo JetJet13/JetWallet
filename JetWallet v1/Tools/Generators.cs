@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Collections;
-using JetWallet_v1.Resources;
-using JetWallet_v1.Model;
+using JetWallet.Resources;
+using JetWallet.Model;
 using NBitcoin;
 using NBitcoin.Protocol;
 using NBitcoin.SPV;
 
 
-namespace JetWallet_v1.Tools
+namespace JetWallet.Tools
 {
     class Generators
     {

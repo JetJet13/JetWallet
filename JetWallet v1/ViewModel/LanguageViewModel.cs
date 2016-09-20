@@ -2,7 +2,7 @@
 using GalaSoft.MvvmLight.Messaging;
 using System.Collections.Generic;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class LanguageViewModel : ViewModelBase

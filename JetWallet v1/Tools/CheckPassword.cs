@@ -4,7 +4,7 @@ using System.Collections;
 using System.Diagnostics;
 using GalaSoft.MvvmLight.Messaging;
 
-namespace JetWallet_v1.Tools
+namespace JetWallet.Tools
 {
     class CheckPassword
     {         

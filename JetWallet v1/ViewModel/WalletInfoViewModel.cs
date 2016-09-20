@@ -1,8 +1,8 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
-using JetWallet_v1.Model;
-using JetWallet_v1.View;
+using JetWallet.Model;
+using JetWallet.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,11 +12,11 @@ using NBitcoin.SPV;
 using NBitcoin;
 using System.Collections;
 using System.Windows;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 using System.Windows.Media;
 using System.Diagnostics;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class WalletInfoViewModel : ViewModelBase

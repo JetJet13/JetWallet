@@ -1,6 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Messaging;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
     class ExchangeRates
     {

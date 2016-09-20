@@ -1,4 +1,4 @@
-﻿<Controls:MetroWindow x:Class="JetWallet_v1.View.AboutView"
+﻿<Controls:MetroWindow x:Class="JetWallet.View.AboutView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -44,7 +44,7 @@
             <StackPanel Orientation="Horizontal">
                 <TextBlock Name="TxtShowDoc" Text="{Binding TextShowDoc}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
                 <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
-                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet_v1" TextDecorations="{x:Null}">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet" TextDecorations="{x:Null}">
                         <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
                             <Rectangle.Fill>
                                 <VisualBrush Visual="{StaticResource appbar_new_window}" />
@@ -70,7 +70,7 @@
             <StackPanel Orientation="Horizontal">
                 <TextBlock Name="TxtReportBug" Text="{Binding TextReportBug}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
                 <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
-                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet_v1/issues" TextDecorations="{x:Null}">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet/issues" TextDecorations="{x:Null}">
                         <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
                             <Rectangle.Fill>
                                 <VisualBrush Visual="{StaticResource appbar_new_window}" />
@@ -91,7 +91,7 @@
             <StackPanel Orientation="Horizontal">
                 <TextBlock Name="TxtContribute" Text="{Binding TextContribute}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
                 <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
-                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet_v1" TextDecorations="{x:Null}">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet" TextDecorations="{x:Null}">
                         <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
                             <Rectangle.Fill>
                                 <VisualBrush Visual="{StaticResource appbar_new_window}" />
@@ -103,7 +103,7 @@
             <StackPanel Orientation="Horizontal">
                 <TextBlock Name="TxtTranslate" Text="{Binding TextTranslate}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
                 <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
-                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet_v1/issues" TextDecorations="{x:Null}">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet/issues" TextDecorations="{x:Null}">
                         <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
                             <Rectangle.Fill>
                                 <VisualBrush Visual="{StaticResource appbar_new_window}" />

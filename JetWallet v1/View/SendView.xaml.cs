@@ -1,8 +1,8 @@
 ﻿using System.Windows;
 using MahApps.Metro.Controls;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 
-namespace JetWallet_v1.View
+namespace JetWallet.View
 {
     /// <summary>
     /// Description for SendView.

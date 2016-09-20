@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Messaging;
 using GalaSoft.MvvmLight.Command;
-using JetWallet_v1;
-using JetWallet_v1.Tools;
-using JetWallet_v1.Model;
+using JetWallet;
+using JetWallet.Tools;
+using JetWallet.Model;
 
-namespace JetWallet_v1.Components
+namespace JetWallet.Components
 {
     namespace Menu
     {

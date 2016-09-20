@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using NBitcoin;
 using System.Diagnostics;
 
-namespace JetWallet_v1.Model
+namespace JetWallet.Model
 {
     /// <summary>
     /// Wallet Key holds the private key, public key, and key path

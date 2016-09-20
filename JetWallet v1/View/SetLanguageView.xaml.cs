@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using MahApps.Metro.Controls;
-namespace JetWallet_v1.View
+namespace JetWallet.View
 {
     /// <summary>
     /// Description for SetLanguageView.

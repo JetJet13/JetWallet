@@ -1,10 +1,10 @@
 ﻿using System.Windows;
-using JetWallet_v1.ViewModel;
+using JetWallet.ViewModel;
 using MahApps.Metro.Controls;
 using MaterialIcons;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 
-namespace JetWallet_v1.View
+namespace JetWallet.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

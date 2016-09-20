@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using NBitcoin;
 using NBitcoin.Protocol;
-using JetWallet_v1.Tools;
-using JetWallet_v1.Model;
-using JetWallet_v1.ViewModel;
+using JetWallet.Tools;
+using JetWallet.Model;
+using JetWallet.ViewModel;
 using NUnit.Framework;
 using System.Diagnostics;
 using GalaSoft.MvvmLight.Threading;
 using FakeItEasy;
 
-namespace JetWallet_v1.Tests
+namespace JetWallet.Tests
 {
     [TestFixture(Author ="Johny Georges",Description ="Testing WalletModel Methods")]
     public class WalletModelTest

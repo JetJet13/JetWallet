@@ -1,7 +1,7 @@
 ﻿/*
   In App.xaml:
   <Application.Resources>
-      <vm:ViewModelLocatorTemplate xmlns:vm="clr-namespace:JetWallet_v1.ViewModel"
+      <vm:ViewModelLocatorTemplate xmlns:vm="clr-namespace:JetWallet.ViewModel"
                                    x:Key="Locator" />
   </Application.Resources>
   
@@ -12,9 +12,9 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
-using JetWallet_v1.Model;
+using JetWallet.Model;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
     /// <summary>
     /// This class contains static references to all the view models in the

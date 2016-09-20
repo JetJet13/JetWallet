@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JetWallet_v1.Resources {
+namespace JetWallet.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace JetWallet_v1.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JetWallet_v1.Resources.StringResource", typeof(StringResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JetWallet.Resources.StringResource", typeof(StringResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -7,7 +7,7 @@ using System.Windows.Media;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 using NBitcoin;
 using NBitcoin.Protocol;
 using NBitcoin.SPV;
@@ -17,10 +17,10 @@ using System.IO;
 using GalaSoft.MvvmLight.Messaging;
 using System.Windows;
 using Base58Check;
-using JetWallet_v1.ViewModel;
+using JetWallet.ViewModel;
 using System.Collections.ObjectModel;
 
-namespace JetWallet_v1.Model
+namespace JetWallet.Model
 {
 
     public enum WalletModelState

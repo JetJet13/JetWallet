@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
-using JetWallet_v1.Resources;
-using JetWallet_v1.Model;
+using JetWallet.Resources;
+using JetWallet.Model;
 
-namespace JetWallet_v1.Tools
+namespace JetWallet.Tools
 {
     class TextTools
     {

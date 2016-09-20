@@ -9,7 +9,7 @@ public enum WalletNetwork
     Testnet
 }
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
     public class UiSettings : ViewModelBase
     {

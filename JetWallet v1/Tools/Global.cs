@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using JetWallet_v1.ViewModel;
+using JetWallet.ViewModel;
 using GalaSoft.MvvmLight.Messaging;
 using System.Diagnostics;
-using JetWallet_v1.Model;
+using JetWallet.Model;
 
-namespace JetWallet_v1.Tools
+namespace JetWallet.Tools
 {
     // This Class holds all global variables
     public class Global

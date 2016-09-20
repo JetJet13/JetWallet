@@ -6,14 +6,14 @@ using System.Collections;
 using System.Diagnostics;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using JetWallet_v1.Model;
+using JetWallet.Model;
 using GalaSoft.MvvmLight.Messaging;
 using NBitcoin;
 using NBitcoin.Protocol;
 using NBitcoin.SPV;
-using JetWallet_v1.ViewModel;
+using JetWallet.ViewModel;
 
-namespace JetWallet_v1.Tools
+namespace JetWallet.Tools
 {
     class FileTools
     {        

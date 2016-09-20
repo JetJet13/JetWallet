@@ -1,8 +1,8 @@
 ﻿using System.Windows;
 using MahApps.Metro.Controls;
-using JetWallet_v1.ViewModel;
-using JetWallet_v1.Tools;
-namespace JetWallet_v1.View
+using JetWallet.ViewModel;
+using JetWallet.Tools;
+namespace JetWallet.View
 {
     /// <summary>
     /// Description for CreateWalletView.

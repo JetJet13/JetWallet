@@ -1,10 +1,10 @@
 ﻿using System.Windows;
 using System.IO;
 using GalaSoft.MvvmLight.Threading;
-using JetWallet_v1.Tools;
-using JetWallet_v1.ViewModel;
+using JetWallet.Tools;
+using JetWallet.ViewModel;
 using System.Diagnostics;
-using JetWallet_v1.View;
+using JetWallet.View;
 using System.Threading;
 
 /// <summary>
@@ -30,7 +30,7 @@ using System.Threading;
 /// </summary>
 
 
-namespace JetWallet_v1
+namespace JetWallet
 {
     /// <summary>
     /// Interaction logic for App.xaml

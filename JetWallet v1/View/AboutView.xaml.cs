@@ -2,7 +2,7 @@
 using MahApps.Metro.Controls;
 using System.Windows.Navigation;
 
-namespace JetWallet_v1.View
+namespace JetWallet.View
 {
     /// <summary>
     /// Description for AboutView.

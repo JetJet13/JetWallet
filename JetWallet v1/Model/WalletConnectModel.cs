@@ -10,9 +10,9 @@ using NBitcoin.Protocol.Behaviors;
 using System.IO;
 using NBitcoin;
 using NBitcoin.SPV;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 
-namespace JetWallet_v1.Model
+namespace JetWallet.Model
 {
     public class WalletConnectModel : INotifyPropertyChanged
     {

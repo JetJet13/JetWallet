@@ -5,7 +5,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Documents;
 
-namespace JetWallet_v1.Resources
+namespace JetWallet.Resources
 {
     public class GridViewSort
     {

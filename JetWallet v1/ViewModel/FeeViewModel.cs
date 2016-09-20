@@ -1,5 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
-using JetWallet_v1.Tools;
+using JetWallet.Tools;
 using NBitcoin;
 using NBitcoin.SPV;
 using Newtonsoft.Json;
@@ -9,7 +9,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
     public class BitcoinFees
     {

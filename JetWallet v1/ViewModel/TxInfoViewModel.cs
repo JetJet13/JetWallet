@@ -3,9 +3,9 @@
 using System.Diagnostics;
 using QBitNinja.Client;
 using GalaSoft.MvvmLight;
-using JetWallet_v1.Tools;
-using JetWallet_v1.View;
-using JetWallet_v1.Model;
+using JetWallet.Tools;
+using JetWallet.View;
+using JetWallet.Model;
 using GalaSoft.MvvmLight.Messaging;
 using NBitcoin;
 using System.Collections;
@@ -16,7 +16,7 @@ using QBitNinja.Client.Models;
 using System.Windows;
 using MahApps.Metro.Controls.Dialogs;
 
-namespace JetWallet_v1.ViewModel
+namespace JetWallet.ViewModel
 {
 
     public class TxInfoViewModel : ViewModelBase
