@@ -1,0 +1,190 @@
+﻿<Controls:MetroWindow x:Class="JetWallet_v1.View.WalletInfoView"
+        x:Name="WalletInfoWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:util="clr-namespace:JetWallet_v1.Resources"
+        mc:Ignorable="d ignore"
+        EnableDWMDropShadow="True"
+        WindowStartupLocation="CenterScreen"
+        TitleCaps="False"
+        WindowTitleBrush="{Binding ColorScheme, FallbackValue='#FF263238'}"
+        ShowMaxRestoreButton="False"
+        ShowMinButton="False"
+        Title="{Binding TextTitle}"
+        DataContext="{Binding WalletInfo, Source={StaticResource Locator}}" Height="446" Width="749">
+    <Window.Resources>
+        <ResourceDictionary>
+            <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedTabControl.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <TabControl>
+            <TabItem Header="{Binding TextDetails}" FontSize="14">
+                <Grid Margin="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="115"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left">
+                        <TextBlock Name="TxtName" Text="{Binding TextName}" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        <TextBlock Text="{Binding Wallet.DisplayName}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,5" VerticalAlignment="Bottom">
+                        <TextBlock Name="TxtDesc" Text="{Binding TextDesc}" Margin="5,0,0,0" VerticalAlignment="Top"/>
+                        <TextBlock Margin="10,0,0,0" Text="{Binding Wallet.Desc}" HorizontalAlignment="Left" TextWrapping="Wrap" Width="450" VerticalAlignment="Top" Height="40"/>
+                    </StackPanel>
+                    <Rectangle Fill="#FFE6E6E6" VerticalAlignment="Bottom" Height="1" Margin="0,0,90,0"></Rectangle>
+                    <Rectangle Fill="#FFE6E6E6" VerticalAlignment="Bottom" Height="1" Margin="0,0,90,0" Grid.Row="1"></Rectangle>
+
+
+                    <StackPanel Orientation="Vertical" Margin="0" Grid.Row="1">
+                        <StackPanel Orientation="Horizontal" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Margin="5,0,0,5">
+                            <TextBlock Name="TxtNetwork" Text="{Binding TextNetwork}" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding Wallet.NetworkChoice}" Margin="10,0,0,0" VerticalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Margin="5,0,0,5">
+                            <TextBlock Name="TxtDate" Text="{Binding TextDate}" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding WalletCreated}" Margin="10,0,0,0" VerticalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                        <DockPanel VerticalAlignment="Bottom" Margin="5,0,0,0">
+                            <TextBlock Name="TxtFile" Text="{Binding TextFile}" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding Wallet.FileLocation}" Margin="10,7,0,7" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <Button Name="BtnCopy" Command="{Binding CopyStringCmd}" CommandParameter="{Binding Wallet.FileLocation}" Content="{Binding TextCopy}" HorizontalAlignment="Right" Margin="0" DockPanel.Dock="Right" MinWidth="65"/>
+                        </DockPanel>
+                    </StackPanel>
+                    <Grid Grid.Row="2" Margin="0,8,0,0">
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="0" HorizontalAlignment="Left" Height="100" MinWidth="375">
+                            <DockPanel  Margin="0,0,0,5" LastChildFill="False">
+                                <TextBlock Name="TxtBalance" Text="{Binding TextBalance}"  HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                                <Button Command="{Binding CopyDecimalCmd}" CommandParameter="{Binding Wallet.BalanceDisplay}"  Content="{Binding TextCopy}" HorizontalAlignment="Right" Margin="10,0,0,0" DockPanel.Dock="Right" Height="30" MinWidth="65"/>
+                                <TextBlock Text="{Binding UiSettings.Symbol}" DockPanel.Dock="Right" Margin="3,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Wallet.BalanceDisplay}" ToolTip="{Binding Wallet.BalanceCurrDisplay}" VerticalAlignment="Center" TextAlignment="Right" DockPanel.Dock="Right" Margin="10,0,0,0" />
+                            </DockPanel>
+                            <DockPanel Margin="0,0,0,5" LastChildFill="False">
+                                <TextBlock Name="TxtAvailBalance" Text="{Binding TextAvailBalance}" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                                <Button Command="{Binding CopyDecimalCmd}" CommandParameter="{Binding Wallet.AvailableBalanceDisplay}"  Content="{Binding TextCopy}" HorizontalAlignment="Right" Margin="10,0,0,0" DockPanel.Dock="Right" Height="30" MinWidth="65"/>
+                                <TextBlock Text="{Binding UiSettings.Symbol}" DockPanel.Dock="Right" Margin="3,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Wallet.AvailableBalanceDisplay}" ToolTip="{Binding Wallet.AvailableBalanceCurrDisplay}" HorizontalAlignment="Right" TextAlignment="Right" DockPanel.Dock="Right" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                            </DockPanel>
+
+                            <DockPanel >
+                                <TextBlock Name="TxtUnconfBalance" Text="{Binding TextUnconfBalance}" HorizontalAlignment="Center" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                                <Button Command="{Binding CopyDecimalCmd}" CommandParameter="{Binding Wallet.UnconfirmedBalanceDisplay}"  Content="{Binding TextCopy}" HorizontalAlignment="Right" Margin="10,0,0,0" DockPanel.Dock="Right" Height="30" MinWidth="65"/>
+                                <TextBlock Text="{Binding UiSettings.Symbol}" DockPanel.Dock="Right" Margin="3,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Wallet.UnconfirmedBalanceDisplay}" ToolTip="{Binding Wallet.UnconfirmedBalanceCurrDisplay}" HorizontalAlignment="Right" TextAlignment="Right" DockPanel.Dock="Right" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                            </DockPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="0,0,5,0" Grid.Row="2" MinWidth="158" HorizontalAlignment="Right">
+                            <DockPanel Margin="0,0,0,5" Height="30">
+                                <TextBlock Name="TxtNumTx" Text="{Binding TextNumTx}" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Wallet.NumTxs}" HorizontalAlignment="Right" Margin="0" TextAlignment="Right" DockPanel.Dock="Right" VerticalAlignment="Center"/>
+                            </DockPanel>
+                            <DockPanel Margin="0,0,0,5" Height="30">
+                                <TextBlock Name="TxtNumRecTx" Text="{Binding TextNumRecTx}" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Wallet.NumReceivedTxs}" HorizontalAlignment="Right" Margin="0" TextAlignment="Right" DockPanel.Dock="Right" VerticalAlignment="Center"/>
+                            </DockPanel>
+                            <DockPanel VerticalAlignment="Top" Height="30">
+                                <TextBlock Name="TxtNumSentTx" Text="{Binding TextNumSentTx}" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Wallet.NumSentTxs}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" TextAlignment="Right" DockPanel.Dock="Right"/>
+                            </DockPanel>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="{Binding TextAddresses}" FontSize="14">
+                <Grid Margin="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <Label Name="LblAddrDesc" Content="{Binding TextAddrDesc}" FontSize="14"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding WalletAddresses.Count}" FontSize="14"></Label>
+                            <Label Name="LblAddr" Content="{Binding TextAddresses}" FontSize="14"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                            <Label Name="LblSearchAddr" Content="{Binding TextSearch}" FontSize="14"/>
+                            <TextBox Margin="10,0,0,0" Height="30" Width="400" Text="{Binding AddrSearchText, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" Margin="0,10,0,0">
+                        <ItemsControl ItemsSource="{Binding WalletAddresses}" Margin="0">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Margin="0,3">
+                                        <Button Command="{Binding ElementName=WalletInfoWin, Path=DataContext.CopyStringCmd}" CommandParameter="{Binding}"  Content="{Binding ElementName=WalletInfoWin, Path=DataContext.TextCopy}" Height="30" HorizontalAlignment="Left" MinWidth="65"/>
+                                        <Label Content="{Binding}" Margin="15,0,0,0" FontSize="14"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="{Binding TextTransactions}">
+                <Grid Margin="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="103"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.RowSpan="2">
+                        <Label Name="LblTxDesc" Content="{Binding TextTxDesc}" FontSize="14"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Label FontSize="14" Content="{Binding WalletTxs.Count}"/>
+                            <Label Name="LblTxs" Content="{Binding TextTransactions}" FontSize="14"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                            <Label Name="LblSearchTx" Content="{Binding TextSearch}" FontSize="14"/>
+                            <TextBox Margin="10,0,0,0" FontSize="14" Height="30" Width="400" Text="{Binding TxSearchText, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <ListView ItemsSource="{Binding WalletTxs}" Margin="0" Grid.Row="1" util:GridViewSort.AutoSort="True">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn>
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button  Command="{Binding ElementName=WalletInfoWin, Path=DataContext.OpenTxInfoCmd}" CommandParameter="{Binding Id}" Width="20" Height="20" FontSize="14" Background="#FF959595" Cursor="Hand" Margin="0,3">
+                                                <Button.OpacityMask>
+                                                    <VisualBrush Visual="{StaticResource appbar_launch_new_window}" Stretch="None"/>
+                                                </Button.OpacityMask>
+                                            </Button>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <GridViewColumn Header="{Binding ElementName=WalletInfoWin, Path=DataContext.TextTxHash}" Width="180" DisplayMemberBinding="{Binding Id}" util:GridViewSort.PropertyName="Id" />
+                                <GridViewColumn Header="{Binding ElementName=WalletInfoWin, Path=DataContext.TextTxDate}" DisplayMemberBinding="{Binding DateDisplay}" util:GridViewSort.PropertyName="Date"/>
+                                <GridViewColumn Header="{Binding ElementName=WalletInfoWin, Path=DataContext.TextTxStatus}" DisplayMemberBinding="{Binding StateString}" util:GridViewSort.PropertyName="Confirmations"/>
+                                <GridViewColumn Header="{Binding ElementName=WalletInfoWin, Path=DataContext.TextTxAction}" DisplayMemberBinding="{Binding ActionString}" util:GridViewSort.PropertyName="Action"/>
+                                <GridViewColumn Header="{Binding ElementName=WalletInfoWin, Path=DataContext.TextTxAmount}" DisplayMemberBinding="{Binding BalanceDisplay}" util:GridViewSort.PropertyName="Balance"/>
+                                <GridViewColumn Header="{Binding ElementName=WalletInfoWin, Path=DataContext.TextTxValue}" DisplayMemberBinding="{Binding BalanceCurrDisplay}"  util:GridViewSort.PropertyName="BalanceCurrDisplay"/>
+
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+
+
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+
+
+</Controls:MetroWindow>

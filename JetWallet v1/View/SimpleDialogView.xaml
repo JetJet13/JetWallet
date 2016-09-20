@@ -1,0 +1,27 @@
+﻿<Controls:MetroWindow x:Class="JetWallet_v1.View.SimpleDialogView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        WindowStartupLocation="CenterScreen"
+        Title="{Binding TextTitle}"
+        TitleCaps="False"
+        WindowTitleBrush="{Binding ColorScheme}"
+        EnableDWMDropShadow="True"
+        BorderBrush="{Binding ColorScheme}"                      
+        BorderThickness="1"
+        ShowMaxRestoreButton="False"
+        ShowMinButton="False"
+        ShowCloseButton="False"
+        mc:Ignorable="d ignore"
+        DataContext="{Binding SimpleDialog, Source={StaticResource Locator}}" VerticalAlignment="Center" Height="225" Width="550">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Center">
+            <TextBlock x:Name="textBlock" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding PromptMessage}" VerticalAlignment="Center" FontSize="14" FontFamily="Segoe UI" HorizontalAlignment="Center" LineHeight="22" Width="450"/>
+            <Button Content="{Binding TextOk}" Margin="0,20,0,0" Command="{Binding CloseViewCmd}" Background="{ Binding ColorScheme, FallbackValue='#FF263238' }" Width="70" Height="30" Foreground="White" />
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>

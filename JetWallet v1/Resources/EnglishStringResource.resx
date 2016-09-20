@@ -1,0 +1,1124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>General Use for Dialog Boxes</comment>
+  </data>
+  <data name="CreateWallet_CreateWallet" xml:space="preserve">
+    <value>Create Wallet</value>
+    <comment>Used in CreateWalletView. Button: BtnCreateWallet</comment>
+  </data>
+  <data name="CreateWallet_Desc" xml:space="preserve">
+    <value>Description (optional)</value>
+    <comment>Used in CreateWalletView. Label: LblDesc</comment>
+  </data>
+  <data name="CreateWallet_Dialog_ActiveWallet_Message" xml:space="preserve">
+    <value>A wallet is already active. Would you like to close the current active wallet and make this new wallet active ?</value>
+    <comment>Used in CreateWalletView. Dialog Box appears when there is already and active wallet and prompts the user to close the active wallet and replace it with newly created wallet or not.</comment>
+  </data>
+  <data name="CreateWallet_Dialog_ActiveWallet_Title" xml:space="preserve">
+    <value>Notice</value>
+    <comment>Used in CreateWalletView. Dialog Box appears when there is already and active wallet and prompts the user to close the active wallet and replace it with newly created wallet or not.</comment>
+  </data>
+  <data name="CreateWallet_Dialog_Insufficient_Message" xml:space="preserve">
+    <value>Password field is required. Wallet password must be at least *NUM* characters.</value>
+    <comment>Used in CreateWalletView. Dialog Box appears when the password entered is weak.</comment>
+  </data>
+  <data name="CreateWallet_Dialog_Insufficient_Title" xml:space="preserve">
+    <value>Password is Insufficient</value>
+    <comment>Used in CreateWalletView. Dialog Box appears when the password entered is weak.</comment>
+  </data>
+  <data name="CreateWallet_Dialog_Invalid_Message" xml:space="preserve">
+    <value>Name field is required. Password field is required and must be at least *NUM* characters.</value>
+    <comment>Used in CreateWalletView. Dialog Box appears when both the name and password field are invalid/empty</comment>
+  </data>
+  <data name="CreateWallet_Dialog_Invalid_Title" xml:space="preserve">
+    <value>Name &amp; Password Required</value>
+    <comment>Used in CreateWalletView. Dialog Box appears when both the name and password field are invalid/empty</comment>
+  </data>
+  <data name="CreateWallet_Dialog_NameEmpty_Message" xml:space="preserve">
+    <value>Name field cannot be empty.</value>
+    <comment>Used in CreateWalletView. Dialog Box appears when the Name field is left empty</comment>
+  </data>
+  <data name="CreateWallet_Dialog_NameEmpty_Title" xml:space="preserve">
+    <value>Name is required</value>
+    <comment>Used in CreateWalletView. Dialog Box appears when the Name field is left empty</comment>
+  </data>
+  <data name="CreateWallet_Message" xml:space="preserve">
+    <value>Please fill in the following fields to create a new wallet</value>
+    <comment>Used in CreateWalletView. Label: LblMessage</comment>
+  </data>
+  <data name="CreateWallet_Name" xml:space="preserve">
+    <value>Name your wallet *</value>
+    <comment>Used in CreateWalletView. Label: LblName</comment>
+  </data>
+  <data name="CreateWallet_NameExample" xml:space="preserve">
+    <value>eg. Johny's Wallet</value>
+    <comment>Used in CreateWalletView. Label: LblNameExample</comment>
+  </data>
+  <data name="CreateWallet_Pass" xml:space="preserve">
+    <value>Password protect your wallet *</value>
+    <comment>Used in CreateWalletView. Label: LblPass</comment>
+  </data>
+  <data name="CreateWallet_Testnet" xml:space="preserve">
+    <value>Testnet *</value>
+    <comment>Used in CreateWalletView. Label: LblTestnet</comment>
+  </data>
+  <data name="CreateWallet_TestnetMessage" xml:space="preserve">
+    <value>Not sure? Leave unchecked</value>
+    <comment>Used in CreateWalletView. Label: LblTestnetHelper</comment>
+  </data>
+  <data name="CreateWallet_Title" xml:space="preserve">
+    <value>Create A New Wallet</value>
+    <comment>Used in CreateWalletView. Window Title</comment>
+  </data>
+  <data name="Error_A100" xml:space="preserve">
+    <value> Wallet File does not exist at specified location *path*. This wallet will now close.</value>
+    <comment>Error_A100 
+refers to the cleint not being able to locate the wallet file at the location specified when imported/created. 
+ Culprit: The user has moved or deleted the wallet file while it was in use.</comment>
+  </data>
+  <data name="Error_A100_Lock" xml:space="preserve">
+    <value>Could not lock wallet.</value>
+    <comment>Used in ManageWalletView. Error_A100 occured when the user tried to lock the wallet.</comment>
+  </data>
+  <data name="Error_A100_Pass" xml:space="preserve">
+    <value>Could not change wallet password.</value>
+    <comment>Used in ManageWalletView. Error_A100 occured when the user tried to change the wallet password</comment>
+  </data>
+  <data name="Error_A200" xml:space="preserve">
+    <value>There already exists Jet Wallet files in the specified path *path* &amp; *recoverypath*. Please give your wallet a new name or delete the existing Jet Wallet Files.</value>
+    <comment>Error_A200 refers to the situation where a user is trying to create a wallet with a name that is already in use/taken.</comment>
+  </data>
+  <data name="Error_A201" xml:space="preserve">
+    <value>A Jet Wallet file already exists with the name '*name*' in the specified path  *path*. Please give your wallet a new name. Note that the recovery wallet file for '*name*' is missing.</value>
+    <comment>Error_A201 refers to the situation where a user is trying to create a wallet with a name that is already in use. However, the recovery file associated with the existing wallet is missing.</comment>
+  </data>
+  <data name="Error_A202" xml:space="preserve">
+    <value>A Jet Wallet recovery file already exists with the name '*name*' in the specified path *recoverypath*. Please give your wallet a new name.</value>
+    <comment>Error_A202 refers to the situation where a user is trying to create a wallet with a name this is already in use. However, the regular .jet wallet file is missing and only the recovery file is found.</comment>
+  </data>
+  <data name="Error_A300" xml:space="preserve">
+    <value>Wallet Files failed to update. Wallet Files do not exist at specified location.</value>
+    <comment>Error_A300 refers to the situation where the client is attempting to update the respected wallet file, but the wallet files could not be found in their location in which they where loaded into the client.</comment>
+  </data>
+  <data name="Error_A400" xml:space="preserve">
+    <value>The previously active wallet failed to load. The wallet file could not be found.</value>
+    <comment>Error_A400 refers to situation where the previously active wallet file location could not be found. This error appears at the start of the application when the user is prompted to enter the password for the previously active wallet.</comment>
+  </data>
+  <data name="Error_A500" xml:space="preserve">
+    <value>The file selected is a Jet Wallet recovery file. You will need the respected Recovery Phrase to unlock the wallet. If you are trying to recover a wallet, use the 'Recover Wallet' option in the File menu tab.</value>
+    <comment>Error_A500 refers to the situation where the user is trying to import a jet wallet recovery file instead of a regular jet wallet file</comment>
+  </data>
+  <data name="Error_A501" xml:space="preserve">
+    <value>Invalid file type. Jet Wallet files are of the form '.jet' ie) mywallet.jet</value>
+    <comment>Error_A501 refers to the situation where the user is trying to import an invalid file type, that is, a non jet wallet file.</comment>
+  </data>
+  <data name="Error_A502" xml:space="preserve">
+    <value>Incorrect file type. The file must be a Jet Wallet recovery file. ie) mywallet.recover.jet. Jet Wallet recovery files are hidden by default. You may have to make them visible.</value>
+    <comment>Error_A502 refers to the situation where the user is trying to recover a wallet, and imports a regular jet wallet file.</comment>
+  </data>
+  <data name="Error_A503" xml:space="preserve">
+    <value>Invalid file type. Jet Wallet Recovery files are of the form '.recover.jet' ie) mywallet.recover.jet</value>
+    <comment>Error_A503 refers to the situation where the user is trying to recover a wallet, and imports an invalid file type, ie) .jpg file </comment>
+  </data>
+  <data name="Main_Dialog_ActiveWallet_Message" xml:space="preserve">
+    <value>A wallet is already active. Would you like to close the present active wallet and make this wallet active?</value>
+    <comment>Used in MainWindow. Dialog Box appears when a user recovers or imports a wallet while a wallet is already active.</comment>
+  </data>
+  <data name="Main_Dialog_ActiveWallet_Title" xml:space="preserve">
+    <value>Close Active Wallet?</value>
+    <comment>Used in MainWindow. Dialog Box appears when a user recovers or imports a wallet while a wallet is already active.</comment>
+  </data>
+  <data name="Main_Info_Active" xml:space="preserve">
+    <value>Recent Transactions</value>
+    <comment>Used in MainWindow. TextBlock: Info;
+Appears When there is an active wallet</comment>
+  </data>
+  <data name="Main_Info_Inactive" xml:space="preserve">
+    <value>No Wallet Active.
+Import or Create a Wallet by clicking on File in the Menu Bar.</value>
+    <comment>Used in MainWindow. TextBlock: Info;
+Appears when there is no active wallet.</comment>
+  </data>
+  <data name="Main_Menu_About" xml:space="preserve">
+    <value>_About</value>
+    <comment>Used in MainWindow. The About option in the Menu Bar.</comment>
+  </data>
+  <data name="Main_Menu_Amber" xml:space="preserve">
+    <value>Amber</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Blue" xml:space="preserve">
+    <value>Blue</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_BlueGrey" xml:space="preserve">
+    <value>Blue Grey</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Brown" xml:space="preserve">
+    <value>Brown</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Close" xml:space="preserve">
+    <value>Close Wallet</value>
+    <comment>Used in MainWindow. Child menu option under File. Closes the current active wallet.</comment>
+  </data>
+  <data name="Main_Menu_ColorScheme" xml:space="preserve">
+    <value>Color Scheme</value>
+    <comment>Used in MainWindow. Child menu option under Settings.</comment>
+  </data>
+  <data name="Main_Menu_Cyan" xml:space="preserve">
+    <value>Cyan</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_DeepOrange" xml:space="preserve">
+    <value>Deep Orange</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_DeepPurple" xml:space="preserve">
+    <value>Deep Purple</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Exit" xml:space="preserve">
+    <value>Exit</value>
+    <comment>Used in MainWindow. Child menu option under File. Exits the application</comment>
+  </data>
+  <data name="Main_Menu_File" xml:space="preserve">
+    <value>_File</value>
+    <comment>Used in MainWindow. The File option in the Menu Bar.</comment>
+  </data>
+  <data name="Main_Menu_Green" xml:space="preserve">
+    <value>Green</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Import" xml:space="preserve">
+    <value>Import Wallet</value>
+    <comment>Used in MainWindow. Child menu option under File</comment>
+  </data>
+  <data name="Main_Menu_Indigo" xml:space="preserve">
+    <value>Indigo</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Language" xml:space="preserve">
+    <value>Language</value>
+    <comment>Used in MainWindow. Child menu option under Settings. </comment>
+  </data>
+  <data name="Main_Menu_LightBlue" xml:space="preserve">
+    <value>Light Blue</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_LightGreen" xml:space="preserve">
+    <value>Light Green</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_LimeGreen" xml:space="preserve">
+    <value>Lime Green</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Manage" xml:space="preserve">
+    <value>Manage Wallet</value>
+    <comment>Used in MainWindow. Child menu option under File. Opens ManageWalletView.</comment>
+  </data>
+  <data name="Main_Menu_New" xml:space="preserve">
+    <value>New Wallet</value>
+    <comment>Used in MainWindow. Child menu option under File. Opens CreateWalletView</comment>
+  </data>
+  <data name="Main_Menu_Orange" xml:space="preserve">
+    <value>Orange</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Pink" xml:space="preserve">
+    <value>Pink</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Purple" xml:space="preserve">
+    <value>Purple</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Recover" xml:space="preserve">
+    <value>Recover Wallet</value>
+    <comment>Used in MainWindow. Child menu option under File. </comment>
+  </data>
+  <data name="Main_Menu_Red" xml:space="preserve">
+    <value>Red</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Settings" xml:space="preserve">
+    <value>_Settings</value>
+    <comment>Used in MainWindow. The Settings option in the Menu Bar.</comment>
+  </data>
+  <data name="Main_Menu_Teal" xml:space="preserve">
+    <value>Teal</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_Menu_Yellow" xml:space="preserve">
+    <value>Yellow</value>
+    <comment>Used in MainWindow. Found in Menu Bar under Settings&gt;ColorScheme</comment>
+  </data>
+  <data name="Main_NoWallet" xml:space="preserve">
+    <value>No Wallet</value>
+    <comment>Used in MainWindow. Label: LblWalletName;
+Appears when there is not active wallet.</comment>
+  </data>
+  <data name="Main_Receive" xml:space="preserve">
+    <value>Receive Bitcoin</value>
+    <comment>Used in MainWindow. Button: BtnReceive</comment>
+  </data>
+  <data name="Main_Send" xml:space="preserve">
+    <value>Send Bitcoin</value>
+    <comment>Used in MainWindow. Button: BtnSend</comment>
+  </data>
+  <data name="ManageWallet_ChangeMessage" xml:space="preserve">
+    <value>Change your Wallet Password</value>
+    <comment>Used in ManageWalletView. Label: LblChangeMessage</comment>
+  </data>
+  <data name="ManageWallet_ChangePass" xml:space="preserve">
+    <value>Change Password</value>
+    <comment>Used in ManageWalletView. Button: BtnChangePass</comment>
+  </data>
+  <data name="ManageWallet_ConfPass" xml:space="preserve">
+    <value>Confirm New Password</value>
+    <comment>Used in ManageWalletView. Label: LblConfPass</comment>
+  </data>
+  <data name="ManageWallet_CurrPass" xml:space="preserve">
+    <value>Enter Current Password</value>
+    <comment>Used in ManageWalletView. Label: LblCurrPass</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Incomplete_Message" xml:space="preserve">
+    <value>All password fields are required. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when one or more fields are empty.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Incomplete_Title" xml:space="preserve">
+    <value>Incomplete Fields</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when one or more fields are empty.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Incorrect_Message" xml:space="preserve">
+    <value>The current password entered was incorrect. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the current password is incorrect.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Incorrect_Title" xml:space="preserve">
+    <value>Incorrect Current Password</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the current password is incorrect.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Insufficient_Message" xml:space="preserve">
+    <value>New password needs to be at least *NUM* characters. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password entered is too weak.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Insufficient_Title" xml:space="preserve">
+    <value>Insufficient New Password</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password entered is too weak.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Invalid_Message" xml:space="preserve">
+    <value>The current wallet password entered is incorrect and the confirmation password did not match the new password. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the current password is incorrect and the new password and confirmation password don't match.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Invalid_Title" xml:space="preserve">
+    <value>Invalid Inputs</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the current password is incorrect and the new password and confirmation password don't match.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Match_Message" xml:space="preserve">
+    <value>The new password cannot match the current password. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password matched the current wallet password.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Match_Title" xml:space="preserve">
+    <value>Current and New Password Match</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password matched the current wallet password.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Success_Message" xml:space="preserve">
+    <value>Wallet password changed successfuly.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the user entered the current wallet password and the new password and confirmation password match. In other words, the wallet password has been changed successfully.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Success_Title" xml:space="preserve">
+    <value>Success</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the user entered the current wallet password and the new password and confirmation password match. In other words, the wallet password has been changed successfully.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Unequal_Message" xml:space="preserve">
+    <value>The new password and confirmation password do not match. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password and confirmation password don't match.</comment>
+  </data>
+  <data name="ManageWallet_Dialog_Unequal_Title" xml:space="preserve">
+    <value>Password Do Not Match</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password and confirmation password don't match.</comment>
+  </data>
+  <data name="ManageWallet_LockMessage" xml:space="preserve">
+    <value>Password lock your wallet</value>
+    <comment>Used in ManageWalletView. Label: LblLockMessage</comment>
+  </data>
+  <data name="ManageWallet_LockWallet" xml:space="preserve">
+    <value>Lock Wallet</value>
+    <comment>Used in ManageWalletView. Button: BtnLockWallet</comment>
+  </data>
+  <data name="ManageWallet_NewPass" xml:space="preserve">
+    <value>Enter New Password</value>
+    <comment>Used in ManageWalletView. Label:LblNewPass</comment>
+  </data>
+  <data name="ManageWallet_Title" xml:space="preserve">
+    <value>Manage Wallet</value>
+    <comment>Used in ManageWalletView. Window Title</comment>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+    <comment>General Use for Dialog Boxes</comment>
+  </data>
+  <data name="PromptPassword_DialogMessage" xml:space="preserve">
+    <value>The wallet '*name*' will not be loaded.</value>
+    <comment>Used in PromptPasswordView. Dialog Box appears when user clicks Cancel.</comment>
+  </data>
+  <data name="PromptPassword_DialogTitle" xml:space="preserve">
+    <value>Continue?</value>
+    <comment>Used in PromptPasswordView. Dialog Box appears when user clicks Cancel.</comment>
+  </data>
+  <data name="PromptPassword_IncorrectMessage" xml:space="preserve">
+    <value>Incorrect password. Please try again.
+Please enter the password associated with the wallet '*name*'</value>
+    <comment>Used in PromptPasswordView. TextBlock: Message
+The user entered an incorrect password, so original message (English_PromptPassword_Message) is replaced with this one.</comment>
+  </data>
+  <data name="PromptPassword_Message" xml:space="preserve">
+    <value>Please enter the password associated with the wallet '*name*'</value>
+    <comment>Used in PromptPasswordView. TextBlock: Message</comment>
+  </data>
+  <data name="PromptPassword_Title" xml:space="preserve">
+    <value>Enter Wallet Password</value>
+    <comment>Used in PromptPasswordView. Window Title</comment>
+  </data>
+  <data name="PromptPassword_UnlockWallet" xml:space="preserve">
+    <value>Unlock Wallet</value>
+    <comment>Used in PromptPasswordView. Button: BtnUnlock</comment>
+  </data>
+  <data name="RecoverWallet_Dialog_Incorrect_Message" xml:space="preserve">
+    <value>Unfortunately, the Recovery Phrase entered was incorrect. Please try again.</value>
+    <comment>Used in RecoverWalletView. Dialog Box appears when the user enters an incorrect recovery phrase associated with the recovery wallet file.</comment>
+  </data>
+  <data name="RecoverWallet_Dialog_Incorrect_Title" xml:space="preserve">
+    <value>Unsuccessful Attempt</value>
+    <comment>Used in RecoverWalletView. Dialog Box appears when the user enters an incorrect recovery phrase associated with the recovery wallet file.</comment>
+  </data>
+  <data name="RecoverWallet_Dialog_Success_Message" xml:space="preserve">
+    <value>Congratulations, the wallet '*name*' was retrieved successfully.</value>
+    <comment>Used in RecoverWalletView. Dialog Box appears when the user enters the correct recovery phrase associated with the recovery wallet file.</comment>
+  </data>
+  <data name="RecoverWallet_Dialog_Success_Title" xml:space="preserve">
+    <value>Success</value>
+    <comment>Used in RecoverWalletView. Dialog Box appears when the user enters the correct recovery phrase associated with the recovery wallet file.</comment>
+  </data>
+  <data name="RecoverWallet_Header" xml:space="preserve">
+    <value>You are attempting to recover the wallet '*name*'</value>
+    <comment>Used in RecoverWalletView. Label: LblHeader
+Note the *name* in the Value section. That is replaced during runtime</comment>
+  </data>
+  <data name="RecoverWallet_Message" xml:space="preserve">
+    <value>Enter the Recovery Phrase associated with the wallet in the text box below.</value>
+    <comment>Used in RecoverWalletView. TextBlock: Message</comment>
+  </data>
+  <data name="RecoverWallet_Note" xml:space="preserve">
+    <value>Make sure to leave a space after each word</value>
+    <comment>Used in RecoverWalletView. Label: LblNote</comment>
+  </data>
+  <data name="RecoverWallet_Recover" xml:space="preserve">
+    <value>Recover</value>
+    <comment>Used in RecoverWalletView. Button: BtnRecover</comment>
+  </data>
+  <data name="RecoverWallet_Title" xml:space="preserve">
+    <value>Recover Wallet</value>
+    <comment>Used in RecoverWalletView. Window Title</comment>
+  </data>
+  <data name="RecoveryPhrase_Header" xml:space="preserve">
+    <value>Recovery Phrase</value>
+    <comment>Used in RecoveryPhraseView. Label: LblHeader</comment>
+  </data>
+  <data name="RecoveryPhrase_Intro" xml:space="preserve">
+    <value>The following bold text of words is your newly created wallet's 'Recovery Phrase'. The Recovery Phrase is used to recover your wallet when you forget/misplace your password.</value>
+    <comment>Used in RecoveryPhraseView. TextBlock: Intro</comment>
+  </data>
+  <data name="RecoveryPhrase_Outro" xml:space="preserve">
+    <value>This is the only time you will have access to the Recovery Phrase so store it somewhere safe and away from prying eyes. This phrase is the only alternative to recover a wallet who's password is forgotton/lost.</value>
+    <comment>Used in RecoveryPhraseView. TextBlock: Outro</comment>
+  </data>
+  <data name="RecoveryPhrase_Title" xml:space="preserve">
+    <value>Wallet Recovery Phrase</value>
+    <comment>Used in RecoveryPhaseView. Window Title</comment>
+  </data>
+  <data name="SetPassword_ConfPass" xml:space="preserve">
+    <value>Confirm Password</value>
+    <comment>Used in SetPasswordView. Label: LblConfPass</comment>
+  </data>
+  <data name="SetPassword_Dialog_Incomplete_Message" xml:space="preserve">
+    <value>All password fields are required. Please try again.</value>
+    <comment>Used in SetPasswordView. Dialog Box appears when the user leaves at least one field blank.</comment>
+  </data>
+  <data name="SetPassword_Dialog_Incomplete_Title" xml:space="preserve">
+    <value>Incomplete Fields</value>
+    <comment>Used in SetPasswordView. Dialog Box appears when the user leaves at least one field blank.</comment>
+  </data>
+  <data name="SetPassword_Dialog_Insufficient_Message" xml:space="preserve">
+    <value>New password needs to be at least *NUM* characters. Please try again.</value>
+    <comment>Used in SetPasswordView. Dialog Box appears when the new password entered is too weak.</comment>
+  </data>
+  <data name="SetPassword_Dialog_Insufficient_Title" xml:space="preserve">
+    <value>Insufficient New Password</value>
+    <comment>Used in SetPasswordView. Dialog Box appears when the new password entered is too weak.</comment>
+  </data>
+  <data name="SetPassword_Dialog_Match_Message" xml:space="preserve">
+    <value>The new password and confirmation password do not match. Please try again.</value>
+    <comment>Used in SetPasswordView. Dialog Box appears when the new password and confirmation password do not match</comment>
+  </data>
+  <data name="SetPassword_Dialog_Match_Title" xml:space="preserve">
+    <value>Passwords Do Not Match</value>
+    <comment>Used in SetPasswordView. Dialog Box appears when the new password and confirmation password do not match</comment>
+  </data>
+  <data name="SetPassword_Dialog_Success_Message" xml:space="preserve">
+    <value>Wallet password changed successfuly.</value>
+    <comment>Used in SetPasswordView. Dialog Box appears when the user successfully sets a new password for the recovered wallet.</comment>
+  </data>
+  <data name="SetPassword_Dialog_Success_Title" xml:space="preserve">
+    <value>Success</value>
+    <comment>Used in SetPasswordView. Dialog Box appears when the user successfully sets a new password for the recovered wallet.</comment>
+  </data>
+  <data name="SetPassword_Header" xml:space="preserve">
+    <value>Set A New Password</value>
+    <comment>Used in SetPasswordView. Label: LblHeader</comment>
+  </data>
+  <data name="SetPassword_Message" xml:space="preserve">
+    <value>Now that you have recovered your wallet, give it a new password.</value>
+    <comment>Used in SetPasswordView. Label: LblMessage</comment>
+  </data>
+  <data name="SetPassword_NewPass" xml:space="preserve">
+    <value>New Password</value>
+    <comment>Used in SetPasswordView. Label: LblNewPass</comment>
+  </data>
+  <data name="SetPassword_SetNewPass" xml:space="preserve">
+    <value>Set New Password</value>
+    <comment>Used in SetPasswordView. Label: BtnSetNewPass</comment>
+  </data>
+  <data name="SetPassword_Title" xml:space="preserve">
+    <value>Set New Wallet Password</value>
+    <comment>Used in SetPasswordView. Window Title</comment>
+  </data>
+  <data name="SimpleDialog_Title" xml:space="preserve">
+    <value>Jet Wallet - Notice</value>
+    <comment>Used in SimpleDialogView. Window Title</comment>
+  </data>
+  <data name="Receive_Title" xml:space="preserve">
+    <value>Receive Bitcoin</value>
+    <comment>Used in ReceiveView. Window Title</comment>
+  </data>
+  <data name="Welcome_CreateWallet" xml:space="preserve">
+    <value>Create a New Wallet</value>
+    <comment>Used in WelcomeView. Button: BtnCreateWallet</comment>
+  </data>
+  <data name="Welcome_Header" xml:space="preserve">
+    <value>Welcome to Jet Wallet</value>
+    <comment>Used in WelcomeView</comment>
+  </data>
+  <data name="Welcome_IntroMessage" xml:space="preserve">
+    <value>Thank you for downloading Jet Wallet. Jet Wallet is a Bitcoin Wallet that you can use to send and receive Bitcoin securely. You will find that this wallet software is quite defensive for good reason.</value>
+    <comment>Used in WelcomeView. TextBlock: Intro</comment>
+  </data>
+  <data name="Welcome_OutroMessage" xml:space="preserve">
+    <value>Remember to use a strong password when creating a wallet. If you forget your wallet password, you can recover your wallet using the 'Recovery Phrase' uniqely generated for each wallet created.</value>
+    <comment>Used in WelcomeView. TextBlock: Outro</comment>
+  </data>
+  <data name="Welcome_QuoteMessage" xml:space="preserve">
+    <value>One of the major motivations of Bitcoin was to give people the ability to control and personally manage their own funds. This software was built to support that motivation. It is also open source.</value>
+    <comment>Used in WelcomeView. TextBlock: Quote</comment>
+  </data>
+  <data name="Welcome_Skip" xml:space="preserve">
+    <value>Skip</value>
+    <comment>Used in WelcomeView. Button: BtnSkip</comment>
+  </data>
+  <data name="Main_Dialog_NoActiveWallet_Message" xml:space="preserve">
+    <value>No active wallet found. Please import or create a new wallet.</value>
+    <comment>Used in MainWindow. Dialog Box appears when the user clicks on 'Send Bitcoin' or 'Receive Bitcoin' and there is no active wallet.</comment>
+  </data>
+  <data name="Main_Dialog_NoActiveWallet_Title" xml:space="preserve">
+    <value>No Wallet Active</value>
+    <comment>Used in MainWindow. Dialog Box appears when the user clicks on 'Send Bitcoin' or 'Receive Bitcoin' and there is no active wallet.</comment>
+  </data>
+  <data name="Receive_Address" xml:space="preserve">
+    <value>Address</value>
+    <comment>Used in ReceiveView. Label: LblAddress</comment>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+    <comment>General use throughout app.</comment>
+  </data>
+  <data name="Receive_Dialog_Cancel_Message" xml:space="preserve">
+    <value>A transaction hasn't appeared that is associated with the following bitcoin address. Once the sender has broadcasted the transaction, it will process and your wallet will update in the background.</value>
+    <comment>Used in ReceiveView. Dialog Box appears when the user clicks cancel before the transaction appears with the associated receiving address.</comment>
+  </data>
+  <data name="Receive_Dialog_Cancel_Title" xml:space="preserve">
+    <value>Done Waiting ?</value>
+    <comment>Used in ReceiveView. Dialog Box appears when the user clicks cancel before the transaction appears with the associated receiving address.</comment>
+  </data>
+  <data name="Receive_Dialog_Success_Message" xml:space="preserve">
+    <value>The sender has broadcasted the transaction. *amount* BTC will be deposited into your wallet shortly.</value>
+    <comment>Used in ReceiveView. Dialog Box appears when the client finds the transaction associated with the receiving address.</comment>
+  </data>
+  <data name="Receive_Dialog_Success_Title" xml:space="preserve">
+    <value>Transaction Found</value>
+    <comment>Used in ReceiveView. Dialog Box appears when the client finds the transaction associated with the receiving address.</comment>
+  </data>
+  <data name="Receive_Notice" xml:space="preserve">
+    <value>Waiting for transaction to appear</value>
+    <comment>Used in ReceiveView. Label: LblNotice</comment>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>Apr</value>
+    <comment>Month 04</comment>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>Aug</value>
+    <comment>Month 08</comment>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>Dec</value>
+    <comment>Month 12</comment>
+  </data>
+  <data name="Febuary" xml:space="preserve">
+    <value>Feb</value>
+    <comment>Month 02</comment>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>Jan</value>
+    <comment>Month 01</comment>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>July</value>
+    <comment>Month 07</comment>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>June</value>
+    <comment>Month 06</comment>
+  </data>
+  <data name="Main_Tx_Message_Btc" xml:space="preserve">
+    <value>*action* *amount* BTC (*symbol**curramount* *curr*)</value>
+    <comment>Used in MainWindow. TextBlock: TxMessage Appears in the recent transaction list. </comment>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>Mar</value>
+    <comment>Month 03</comment>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>May</value>
+    <comment>Month 05</comment>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>Nov</value>
+    <comment>Month 11</comment>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>Oct</value>
+    <comment>Month 10</comment>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>Sep</value>
+    <comment>Month 09</comment>
+  </data>
+  <data name="TxInfo_Title" xml:space="preserve">
+    <value>Transaction Details</value>
+    <comment>Used in TxInfoView. Window Title</comment>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>Received</value>
+    <comment>Used in TxInfoView. Used in association with TxAction enum.</comment>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Sent</value>
+    <comment>Used in TxInfoView. Used in association with TxAction enum.</comment>
+  </data>
+  <data name="TxInfo_BlockHash" xml:space="preserve">
+    <value>Block Hash</value>
+    <comment>Used in TxInfoView. TextBlock: BlockHash</comment>
+  </data>
+  <data name="TxInfo_BlockHeight" xml:space="preserve">
+    <value>Block Height</value>
+    <comment>Used in TxInfoView. TextBlock: BlockHeight</comment>
+  </data>
+  <data name="TxInfo_Conf" xml:space="preserve">
+    <value>Confirmations</value>
+    <comment>Used in TxInfoView. TextBlock: Conf</comment>
+  </data>
+  <data name="TxInfo_Confirmed" xml:space="preserve">
+    <value>Transaction is CONFIRMED</value>
+    <comment>Used in TxInfoView. TextBlock: StatusVal. Used when the transaction has equal to or more than 6 confirmations.</comment>
+  </data>
+  <data name="TxInfo_Fee" xml:space="preserve">
+    <value>Fee</value>
+    <comment>Used in TxInfoView. TextBlock: Fee</comment>
+  </data>
+  <data name="TxInfo_InProgress_Plural" xml:space="preserve">
+    <value>Waiting for  *num* more confirmations</value>
+    <comment>Used in TxInfoView. TextBlock: StatusVal. Used when the transaction has more than 0 but less than 5 confirmations.</comment>
+  </data>
+  <data name="TxInfo_InProgress_Singular" xml:space="preserve">
+    <value>Waiting for  *num* more confirmation</value>
+    <comment>Used in TxInfoView. TextBlock: StatusVal. Used when the transaction has 5 confirmations.</comment>
+  </data>
+  <data name="TxInfo_Status" xml:space="preserve">
+    <value>Status</value>
+    <comment>Used in TxInfoView. TextBlock: Status</comment>
+  </data>
+  <data name="TxInfo_Timestamp" xml:space="preserve">
+    <value>Timestamp</value>
+    <comment>Used in TxInfoView. TextBlock: Timestamp</comment>
+  </data>
+  <data name="TxInfo_TxHash" xml:space="preserve">
+    <value>Transaction Hash</value>
+    <comment>Used in TxInfoView. TextBlock: TxHash</comment>
+  </data>
+  <data name="TxInfo_Unconfirmed" xml:space="preserve">
+    <value>Transaction is UNCONFIRMED</value>
+    <comment>Used in TxInfoView. TextBlock: StatusVal. Used when the transaction has 0 confirmations.</comment>
+  </data>
+  <data name="Main_Menu_Currency" xml:space="preserve">
+    <value>Currency</value>
+    <comment>Used in MainWindow. Child menu option under Settings.</comment>
+  </data>
+  <data name="Main_Menu_License" xml:space="preserve">
+    <value>License</value>
+    <comment>Used in MainWindow. About menu child</comment>
+  </data>
+  <data name="Send_Title" xml:space="preserve">
+    <value>Send Bitcoin</value>
+    <comment>Used in SendView. Window Title</comment>
+  </data>
+  <data name="Send_Dialog_Confirm_Message" xml:space="preserve">
+    <value>You are about to send 
+*btc_amount* *btc_symbol* (*symbol* *curr_amount* *curr*) to 
+*address*. 
+All transactions are final and irreversible once broadcasted. Continue ?</value>
+    <comment>Used in SendView. Dialog box appears as when the user is about to send bitcoin. It is a final confirmation before the transaction is built and broadcasted to the network.</comment>
+  </data>
+  <data name="Send_Dialog_Confirm_Title" xml:space="preserve">
+    <value>Confirmation</value>
+    <comment>Used in SendView. Dialog box appears as when the user is about to send bitcoin. It is a final confirmation before the transaction is built and broadcasted to the network.</comment>
+  </data>
+  <data name="Send_Dialog_EmptyAddr_Message" xml:space="preserve">
+    <value>Please enter an address in the reciepient address field</value>
+    <comment>Used in SendView. Dialog box appears when the user leaves the receipient address field empty</comment>
+  </data>
+  <data name="Send_Dialog_EmptyAddr_Title" xml:space="preserve">
+    <value>Empty Address Field</value>
+    <comment>Used in SendView. Dialog box appears when the user leaves the receipient address field empty</comment>
+  </data>
+  <data name="Send_Dialog_EmptyPass_Message" xml:space="preserve">
+    <value>The password field cannot be empty.</value>
+    <comment>Used in SendView. Dialog box appears when the user leaves the password box empty</comment>
+  </data>
+  <data name="Send_Dialog_EmptyPass_Title" xml:space="preserve">
+    <value>Empty Password Field</value>
+    <comment>Used in SendView. Dialog box appears when the user leaves the password box empty</comment>
+  </data>
+  <data name="Send_Dialog_IncorrectPass_Message" xml:space="preserve">
+    <value>The password entered was incorrect. Please try again.</value>
+    <comment>Used in SendView. Dialog box appears when the user enters an incorrect password when trying to send bitcoin.</comment>
+  </data>
+  <data name="Send_Dialog_IncorrectPass_Title" xml:space="preserve">
+    <value>Incorrect Password</value>
+    <comment>Used in SendView. Dialog box appears when the user enters an incorrect password when trying to send bitcoin.</comment>
+  </data>
+  <data name="Send_Dialog_InvalidAddr_Message" xml:space="preserve">
+    <value>The address  you have entered is invalid. Please try again.</value>
+    <comment>Used in SendView. Dialog box appears when the user enters an invalid address, ie) too short or invalid characters</comment>
+  </data>
+  <data name="Send_Dialog_InvalidAddr_Title" xml:space="preserve">
+    <value>Invalid Address</value>
+    <comment>Used in SendView. Dialog box appears when the user enters an invalid address, ie) too short or invalid characters</comment>
+  </data>
+  <data name="Send_Dialog_NotEnoughFunds_Message" xml:space="preserve">
+    <value>The amount of bitcoin you are attempting to send is greater then the amount of bitcoin you have. Please lower the amount of bitcoin you are trying to send.</value>
+    <comment>Used in SendView. Dialog box appears when the user is trying to send an amount that is greater then the funds of the wallet</comment>
+  </data>
+  <data name="Send_Dialog_NotEnoughFunds_Title" xml:space="preserve">
+    <value>Insufficient Funds</value>
+    <comment>Used in SendView. Dialog box appears when the user is trying to send an amount that is greater then the funds of the wallet</comment>
+  </data>
+  <data name="Send_Dialog_Success_Message" xml:space="preserve">
+    <value>Success. The transaction has been broadcasted to the network. </value>
+    <comment>Used in SendView. Dialog box appears when the user confirms sending the funds and the transaction is broadcasted successfully.</comment>
+  </data>
+  <data name="Send_Dialog_Success_Title" xml:space="preserve">
+    <value>Sent Bitcoin</value>
+    <comment>Used in SendView. Dialog box appears when the user confirms sending the funds and the transaction is broadcasted successfully.</comment>
+  </data>
+  <data name="BTC" xml:space="preserve">
+    <value>BTC</value>
+    <comment>General use throughout app.</comment>
+  </data>
+  <data name="Send_Amount" xml:space="preserve">
+    <value>Amount *</value>
+    <comment>Used in SendView. Label: LblAmount</comment>
+  </data>
+  <data name="Send_AvailAmount" xml:space="preserve">
+    <value>Available Balance</value>
+    <comment>Used in SendView. Label: LblAvailAmount</comment>
+  </data>
+  <data name="Send_Example" xml:space="preserve">
+    <value>Example: 178adALA4BWNsyyZuNWutDMvQJYRmuLwrs</value>
+    <comment>Used in SendView. TextBlock: TxtExample</comment>
+  </data>
+  <data name="Send_Fee" xml:space="preserve">
+    <value>Fee</value>
+    <comment>Used in SendView. Label: LblFee</comment>
+  </data>
+  <data name="Send_Max" xml:space="preserve">
+    <value>Max</value>
+    <comment>Used in SendView. Button: BtnMax</comment>
+  </data>
+  <data name="Send_Pass" xml:space="preserve">
+    <value>Wallet Password *</value>
+    <comment>Used in SendView. Label: LblPass</comment>
+  </data>
+  <data name="Send_ReceipientAddress" xml:space="preserve">
+    <value>Receipient Address *</value>
+    <comment>Used in SendView. Label: LblRecAddr</comment>
+  </data>
+  <data name="Send_SendBtc" xml:space="preserve">
+    <value>Send</value>
+    <comment>Used in SendView. Button: BtnSendBtc</comment>
+  </data>
+  <data name="Awaiting" xml:space="preserve">
+    <value>Awaiting</value>
+    <comment>General Use. option in TxState enum</comment>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Confirmed</value>
+    <comment>General Use. option in TxState enum</comment>
+  </data>
+  <data name="Unconfirmed" xml:space="preserve">
+    <value>Unconfirmed</value>
+    <comment>General Use. option in TxState enum</comment>
+  </data>
+  <data name="WalletInfo_AddrDesc" xml:space="preserve">
+    <value>The following list contains all the address associated with this wallet</value>
+    <comment>Used in WalletInfoView. Addresses Tab. Label: LblAddrDesc</comment>
+  </data>
+  <data name="WalletInfo_Addresses" xml:space="preserve">
+    <value>Addresses</value>
+    <comment>Used in WalletInfoView. Addresses Tab Header</comment>
+  </data>
+  <data name="WalletInfo_AvailBalance" xml:space="preserve">
+    <value>Available Balance</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtAvailBalance</comment>
+  </data>
+  <data name="WalletInfo_Balance" xml:space="preserve">
+    <value>Balance</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtBalance</comment>
+  </data>
+  <data name="WalletInfo_Date" xml:space="preserve">
+    <value>Date Created</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtDate</comment>
+  </data>
+  <data name="WalletInfo_Desc" xml:space="preserve">
+    <value>Description</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtDesc</comment>
+  </data>
+  <data name="WalletInfo_Details" xml:space="preserve">
+    <value>Details</value>
+    <comment>Used in WalletInfoView. Details Tab Header </comment>
+  </data>
+  <data name="WalletInfo_File" xml:space="preserve">
+    <value>File Location</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtFile</comment>
+  </data>
+  <data name="WalletInfo_Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtName</comment>
+  </data>
+  <data name="WalletInfo_Network" xml:space="preserve">
+    <value>Network</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtNetwork</comment>
+  </data>
+  <data name="WalletInfo_NumRecTx" xml:space="preserve">
+    <value>Num. Received</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtNumRecTx</comment>
+  </data>
+  <data name="WalletInfo_NumSentTx" xml:space="preserve">
+    <value>Num. Sent</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtNumSentTx</comment>
+  </data>
+  <data name="WalletInfo_NumTx" xml:space="preserve">
+    <value>Num. Transactions</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtNumTx</comment>
+  </data>
+  <data name="WalletInfo_Search" xml:space="preserve">
+    <value>Search</value>
+    <comment>Used in WalletInfoView. Addresses Tab. Label: LblSearchTx &amp; LblSearchAddr</comment>
+  </data>
+  <data name="WalletInfo_Title" xml:space="preserve">
+    <value>Wallet Information</value>
+    <comment>Used in WalletInfoView. Window Title.</comment>
+  </data>
+  <data name="WalletInfo_Transactions" xml:space="preserve">
+    <value>Transactions</value>
+    <comment>Used in WalletInfoView. Transactions Tab Header</comment>
+  </data>
+  <data name="WalletInfo_TxAction" xml:space="preserve">
+    <value>Action</value>
+    <comment>Used in WalletInfoView. Transactions Tab. ListView header</comment>
+  </data>
+  <data name="WalletInfo_TxAmount" xml:space="preserve">
+    <value>Amount</value>
+    <comment>Used in WalletInfoView. Transactions Tab. ListView header</comment>
+  </data>
+  <data name="WalletInfo_TxDate" xml:space="preserve">
+    <value>Date</value>
+    <comment>Used in WalletInfoView. Transactions Tab. ListView header</comment>
+  </data>
+  <data name="WalletInfo_TxDesc" xml:space="preserve">
+    <value>The following is a list of all transactions associated with this wallet</value>
+    <comment>Used in WalletInfoView. Transactions Tab. Label: LblTxDesc</comment>
+  </data>
+  <data name="WalletInfo_TxHash" xml:space="preserve">
+    <value>Hash</value>
+    <comment>Used in WalletInfoView. Transactions Tab. ListView header</comment>
+  </data>
+  <data name="WalletInfo_TxStatus" xml:space="preserve">
+    <value>Status</value>
+    <comment>Used in WalletInfoView. Transactions Tab. ListView header</comment>
+  </data>
+  <data name="WalletInfo_TxValue" xml:space="preserve">
+    <value>Value</value>
+    <comment>Used in WalletInfoView. Transactions Tab. ListView header</comment>
+  </data>
+  <data name="WalletInfo_UnconfBalance" xml:space="preserve">
+    <value>Unconfirmed Balance</value>
+    <comment>Used in WalletInfoView. Details Tab. TextBlock: TxtUnconfBalance</comment>
+  </data>
+  <data name="Main_Dialog_WalletLoading_Message" xml:space="preserve">
+    <value>All wallet actions are not available while the wallet is loading.</value>
+    <comment>Used in MainWindow. Dialog box appears when the user clicks 'Send Bitcoin','Receive Bitcoin', or the info button.</comment>
+  </data>
+  <data name="Main_Dialog_WalletLoading_Title" xml:space="preserve">
+    <value>Wallet Loading</value>
+    <comment>Used in MainWindow. Dialog box appears when the user clicks 'Send Bitcoin','Receive Bitcoin', or the info button.</comment>
+  </data>
+  <data name="Main_Menu_Resources" xml:space="preserve">
+    <value>Resources</value>
+    <comment>Used in MainWindow. Menu Bar Header</comment>
+  </data>
+  <data name="Main_Menu_CheckForUpdates" xml:space="preserve">
+    <value>Check for updates</value>
+    <comment>Used in MainWindow. Child item of menu header Resources</comment>
+  </data>
+  <data name="Main_Tx_Message_tBtc" xml:space="preserve">
+    <value>*action* *amount* tBTC </value>
+    <comment>Used in MainWindow. TextBlock: TxMessage Appears in the recent transaction list. Testnet Bitcoin version</comment>
+  </data>
+  <data name="Main_Dialog_SameWallet_Message" xml:space="preserve">
+    <value>The wallet you are trying to import is already active.</value>
+    <comment>Used in MainWindow. Dialog box appears when the user tries to import a wallet that is already active.</comment>
+  </data>
+  <data name="Main_Dialog_SameWallet_Title" xml:space="preserve">
+    <value>Same Wallet</value>
+    <comment>Used in MainWindow. Dialog box appears when the user tries to import a wallet that is already active.</comment>
+  </data>
+  <data name="About_Contribute" xml:space="preserve">
+    <value>To contribute to this project</value>
+    <comment>Used in AboutView. TextBlock: TxtContribute</comment>
+  </data>
+  <data name="About_Description" xml:space="preserve">
+    <value>JetWallet is a Bitcoin wallet that allows users to hold, send and receive bitcoins.</value>
+    <comment>Used in AboutView. TextBlock: TxtDesc</comment>
+  </data>
+  <data name="About_Email" xml:space="preserve">
+    <value>E-mail</value>
+    <comment>Used in AboutView. TextBlock: TxtEmail</comment>
+  </data>
+  <data name="About_Feedback" xml:space="preserve">
+    <value>To provide feedback and suggestions</value>
+    <comment>Used in AboutView. TextBlock: TxtFeedback</comment>
+  </data>
+  <data name="About_Header_About" xml:space="preserve">
+    <value>About</value>
+    <comment>Used in AboutView. Label: LblAboutHeader</comment>
+  </data>
+  <data name="About_Header_Contact" xml:space="preserve">
+    <value>Contact</value>
+    <comment>Used in AboutView. Label: LblContactHeader</comment>
+  </data>
+  <data name="About_Header_Contribute" xml:space="preserve">
+    <value>Contribute</value>
+    <comment>Used in AboutView. Label: LblContHeader</comment>
+  </data>
+  <data name="About_Header_Resources" xml:space="preserve">
+    <value>Resources</value>
+    <comment>Used in AboutView. Label: LblResHeader</comment>
+  </data>
+  <data name="About_Learn_Bitcoin" xml:space="preserve">
+    <value>To learn more about bitcoin</value>
+    <comment>Used in AboutView. TextBlock: TxtLearnBitcoin</comment>
+  </data>
+  <data name="About_License" xml:space="preserve">
+    <value>This software is open source and licensed under the GNU Public License v3.</value>
+    <comment>Used in AboutView. TextBlock: TxtLicense</comment>
+  </data>
+  <data name="About_Report_Bug" xml:space="preserve">
+    <value>To report a bug or defect</value>
+    <comment>Used in AboutView. TextBlock: TxtReportBug</comment>
+  </data>
+  <data name="About_Show_Doc" xml:space="preserve">
+    <value>For documentation</value>
+    <comment>Used in AboutView. TextBlock: TxtShowDoc</comment>
+  </data>
+  <data name="About_Show_License" xml:space="preserve">
+    <value>To view a copy of the license</value>
+    <comment>Used in AboutView. TextBlock: TxtShowLicense</comment>
+  </data>
+  <data name="About_Thank_You" xml:space="preserve">
+    <value>Thank you for downloading JetWallet</value>
+    <comment>Used in AboutView. Label: LblThankYou</comment>
+  </data>
+  <data name="About_Translate" xml:space="preserve">
+    <value>To help with translations</value>
+    <comment>Used in AboutView. TextBlock: TxtTranslate</comment>
+  </data>
+  <data name="ManageWallet_Export" xml:space="preserve">
+    <value>Export Wallet Summary</value>
+    <comment>Used in ManageWalletView. Button: BtnExport</comment>
+  </data>
+  <data name="ManageWallet_Repair" xml:space="preserve">
+    <value>Repair Wallet</value>
+    <comment>Used in ManageWalletView. Button: BtnRepair</comment>
+  </data>
+  <data name="Send_Dialog_Unsuccess_Message" xml:space="preserve">
+    <value>An attempt to broadcast the transaction was unsuccessful. Please try again. If the problem persists, please check your network connection.</value>
+    <comment>Used in SendView. Dialog box appears when the user confirms sending the funds and the transaction could not be broadcasted.</comment>
+  </data>
+  <data name="Send_Dialog_Unsuccess_Title" xml:space="preserve">
+    <value>Send Failed</value>
+    <comment>Used in SendView. Dialog box appears when the user confirms sending the funds and the transaction could not be broadcasted.</comment>
+  </data>
+  <data name="Error_N100" xml:space="preserve">
+    <value>Jet Wallet was unable to fetch data from its online resources. Please check your internet connection and your firewall settings.</value>
+    <comment>Error_A200 refers to the situation where JetWallet could not retrieve data from its online resources. ie) BTC price, fee rate</comment>
+  </data>
+  <data name="TxInfo_Dialog_Fail_Message" xml:space="preserve">
+    <value>Unfortunately, JetWallet could not retrieve the data requested. Sorry for the inconvenience. Please try again at a later time.</value>
+    <comment>Used in TxInfoView. Dialog Box appears when both blockchain api resources fail. Either due to downtime or no internet connection.</comment>
+  </data>
+  <data name="TxInfo_Dialog_Fail_Title" xml:space="preserve">
+    <value>Data Unavailable</value>
+    <comment>Used in TxInfoView. Dialog Box appears when both blockchain api resources fail. Either due to downtime or no internet connection.</comment>
+  </data>
+</root>

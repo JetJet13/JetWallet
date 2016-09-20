@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="English_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>General Use for Dialog Boxes</comment>
+  </data>
+  <data name="English_CreateWallet_CreateWallet" xml:space="preserve">
+    <value>Create Wallet</value>
+    <comment>Used in CreateWalletView. Button: BtnCreateWallet</comment>
+  </data>
+  <data name="English_CreateWallet_Desc" xml:space="preserve">
+    <value>Description (optional)</value>
+    <comment>Used in CreateWalletView. Label: LblDesc</comment>
+  </data>
+  <data name="English_CreateWallet_Message" xml:space="preserve">
+    <value>Please fill in the following fields to create a new wallet</value>
+    <comment>Used in CreateWalletView. Label: LblMessage</comment>
+  </data>
+  <data name="English_CreateWallet_Name" xml:space="preserve">
+    <value>Name your wallet *</value>
+    <comment>Used in CreateWalletView. Label: LblName</comment>
+  </data>
+  <data name="English_CreateWallet_NameExample" xml:space="preserve">
+    <value>eg. Johny's Wallet</value>
+    <comment>Used in CreateWalletView. Label: LblNameExample</comment>
+  </data>
+  <data name="English_CreateWallet_Pass" xml:space="preserve">
+    <value>Password protect your wallet *</value>
+    <comment>Used in CreateWalletView. Label: LblPass</comment>
+  </data>
+  <data name="English_CreateWallet_Testnet" xml:space="preserve">
+    <value>Testnet *</value>
+    <comment>Used in CreateWalletView. Label: LblTestnet</comment>
+  </data>
+  <data name="English_CreateWallet_TestnetMessage" xml:space="preserve">
+    <value>Not sure? Leave unchecked</value>
+    <comment>Used in CreateWalletView. Label: LblTestnetHelper</comment>
+  </data>
+  <data name="English_CreateWallet_Title" xml:space="preserve">
+    <value>Create A New Wallet</value>
+    <comment>Used in CreateWalletView. Window Title</comment>
+  </data>
+  <data name="English_Error_A100" xml:space="preserve">
+    <value> Wallet File does not exist at specified location *path*. This wallet will now close.</value>
+    <comment>Error_A100 
+refers to the cleint not being able to locate the wallet file at the location specified when imported/created. 
+ Culprit: The user has moved or deleted the wallet file while it was in use.</comment>
+  </data>
+  <data name="English_Error_A100_Lock" xml:space="preserve">
+    <value>Could not lock wallet.</value>
+    <comment>Used in ManageWalletView. Error_A100 occured when the user tried to lock the wallet.</comment>
+  </data>
+  <data name="English_Error_A100_Pass" xml:space="preserve">
+    <value>Could not change wallet password.</value>
+    <comment>Used in ManageWalletView. Error_A100 occured when the user tried to change the wallet password</comment>
+  </data>
+  <data name="English_ManageWallet_ChangeMessage" xml:space="preserve">
+    <value>Change your Wallet Password</value>
+    <comment>Used in ManageWalletView. Label: LblChangeMessage</comment>
+  </data>
+  <data name="English_ManageWallet_ChangePass" xml:space="preserve">
+    <value>Change Password</value>
+    <comment>Used in ManageWalletView. Button: BtnChangePass</comment>
+  </data>
+  <data name="English_ManageWallet_ConfPass" xml:space="preserve">
+    <value>Confirm New Password</value>
+    <comment>Used in ManageWalletView. Label: LblConfPass</comment>
+  </data>
+  <data name="English_ManageWallet_CurrPass" xml:space="preserve">
+    <value>Enter Current Password</value>
+    <comment>Used in ManageWalletView. Label: LblCurrPass</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Incomplete_Message" xml:space="preserve">
+    <value>All password fields are required. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when one or more fields are empty.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Incomplete_Title" xml:space="preserve">
+    <value>Incomplete Fields</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when one or more fields are empty.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Incorrect_Message" xml:space="preserve">
+    <value>The current password entered was incorrect. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the current password is incorrect.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Incorrect_Title" xml:space="preserve">
+    <value>Incorrect Current Password</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the current password is incorrect.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Insufficient_Message" xml:space="preserve">
+    <value>New password needs to be at least 4 characters. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password entered is too weak.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Insufficient_Title" xml:space="preserve">
+    <value>Insufficient New Password</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password entered is too weak.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Invalid_Message" xml:space="preserve">
+    <value>The current wallet password entered is incorrect and the confirmation password did not match the new password. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the current password is incorrect and the new password and confirmation password don't match.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Invalid_Title" xml:space="preserve">
+    <value>Invalid Inputs</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the current password is incorrect and the new password and confirmation password don't match.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Match_Message" xml:space="preserve">
+    <value>The new password cannot match the current password. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password matched the current wallet password.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Match_Title" xml:space="preserve">
+    <value>Current and New Password Match</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password matched the current wallet password.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Success_Message" xml:space="preserve">
+    <value>Wallet password changed successfuly.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the user entered the current wallet password and the new password and confirmation password match. In other words, the wallet password has been changed successfully.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Success_Title" xml:space="preserve">
+    <value>Success</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the user entered the current wallet password and the new password and confirmation password match. In other words, the wallet password has been changed successfully.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Unequal_Message" xml:space="preserve">
+    <value>The new password and confirmation password do not match. Please try again.</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password and confirmation password don't match.</comment>
+  </data>
+  <data name="English_ManageWallet_Dialog_Unequal_Title" xml:space="preserve">
+    <value>Password Do Not Match</value>
+    <comment>Used in ManageWalletView. Dialog Box appears when the new password and confirmation password don't match.</comment>
+  </data>
+  <data name="English_ManageWallet_LockMessage" xml:space="preserve">
+    <value>Password lock your wallet</value>
+    <comment>Used in ManageWalletView. Label: LblLockMessage</comment>
+  </data>
+  <data name="English_ManageWallet_LockWallet" xml:space="preserve">
+    <value>Lock Wallet</value>
+    <comment>Used in ManageWalletView. Button: BtnLockWallet</comment>
+  </data>
+  <data name="English_ManageWallet_NewPass" xml:space="preserve">
+    <value>Enter New Password</value>
+    <comment>Used in ManageWalletView. Label:LblNewPass</comment>
+  </data>
+  <data name="English_ManageWallet_Title" xml:space="preserve">
+    <value>Manage Wallet</value>
+    <comment>Used in ManageWalletView. Window Title</comment>
+  </data>
+  <data name="English_Ok" xml:space="preserve">
+    <value>OK</value>
+    <comment>General Use for Dialog Boxes</comment>
+  </data>
+  <data name="English_PromptPassword_DialogMessage" xml:space="preserve">
+    <value>The wallet '*name*' will not be loaded.</value>
+    <comment>Used in PromptPasswordView. Dialog Box appears when user clicks Cancel.</comment>
+  </data>
+  <data name="English_PromptPassword_DialogTitle" xml:space="preserve">
+    <value>Continue?</value>
+    <comment>Used in PromptPasswordView. Dialog Box appears when user clicks Cancel.</comment>
+  </data>
+  <data name="English_PromptPassword_IncorrectMessage" xml:space="preserve">
+    <value>Incorrect password. Please try again.
+Please enter the password associated with the wallet '*name*'</value>
+    <comment>Used in PromptPasswordView. TextBlock: Message
+The user entered an incorrect password, so original message (English_PromptPassword_Message) is replaced with this one.</comment>
+  </data>
+  <data name="English_PromptPassword_Message" xml:space="preserve">
+    <value>Please enter the password associated with the wallet '*name*'</value>
+    <comment>Used in PromptPasswordView. TextBlock: Message</comment>
+  </data>
+  <data name="English_PromptPassword_Title" xml:space="preserve">
+    <value>Enter Wallet Password</value>
+    <comment>Used in PromptPasswordView. Window Title</comment>
+  </data>
+  <data name="English_PromptPassword_UnlockWallet" xml:space="preserve">
+    <value>Unlock Wallet</value>
+    <comment>Used in PromptPasswordView. Button: BtnUnlock</comment>
+  </data>
+  <data name="English_RecoverWallet_Header" xml:space="preserve">
+    <value>You are attempting to recover the wallet '*name*'</value>
+    <comment>Used in RecoverWalletView. Label: LblHeader
+Note the *name* in the Value section. That is replaced during runtime</comment>
+  </data>
+  <data name="English_RecoverWallet_Message" xml:space="preserve">
+    <value>Enter the Recovery Phrase associated with the wallet in the text box below.</value>
+    <comment>Used in RecoverWalletView. TextBlock: Message</comment>
+  </data>
+  <data name="English_RecoverWallet_Note" xml:space="preserve">
+    <value>Make sure to leave a space after each word</value>
+    <comment>Used in RecoverWalletView. Label: LblNote</comment>
+  </data>
+  <data name="English_RecoverWallet_Recover" xml:space="preserve">
+    <value>Recover</value>
+    <comment>Used in RecoverWalletView. Button: BtnRecover</comment>
+  </data>
+  <data name="English_RecoverWallet_Title" xml:space="preserve">
+    <value>Recover Wallet</value>
+    <comment>Used in RecoverWalletView. Window Title</comment>
+  </data>
+  <data name="English_RecoveryPhrase_Header" xml:space="preserve">
+    <value>Recovery Phrase</value>
+    <comment>Used in RecoveryPhraseView. Label: LblHeader</comment>
+  </data>
+  <data name="English_RecoveryPhrase_Intro" xml:space="preserve">
+    <value>The following bold text of words is your newly created wallet's 'Recovery Phrase'. The Recovery Phrase is used to recover your wallet when you forget/misplace your password.</value>
+    <comment>Used in RecoveryPhraseView. TextBlock: Intro</comment>
+  </data>
+  <data name="English_RecoveryPhrase_Outro" xml:space="preserve">
+    <value>This is the only time you will have access to the Recovery Phrase so store it somewhere safe and away from prying eyes. This phrase is the only alternative to recover a wallet who's password is forgotton/lost.</value>
+    <comment>Used in RecoveryPhraseView. TextBlock: Outro</comment>
+  </data>
+  <data name="English_RecoveryPhrase_Title" xml:space="preserve">
+    <value>Wallet Recovery Phrase</value>
+    <comment>Used in RecoveryPhaseView. Window Title</comment>
+  </data>
+  <data name="English_SetPassword_ConfPass" xml:space="preserve">
+    <value>Confirm Password</value>
+    <comment>Used in SetPasswordView. Label: LblConfPass</comment>
+  </data>
+  <data name="English_SetPassword_Header" xml:space="preserve">
+    <value>Set A New Password</value>
+    <comment>Used in SetPasswordView. Label: LblHeader</comment>
+  </data>
+  <data name="English_SetPassword_Message" xml:space="preserve">
+    <value>Now that you have recovered your wallet, give it a new password.</value>
+    <comment>Used in SetPasswordView. Label: LblMessage</comment>
+  </data>
+  <data name="English_SetPassword_NewPass" xml:space="preserve">
+    <value>New Password</value>
+    <comment>Used in SetPasswordView. Label: LblNewPass</comment>
+  </data>
+  <data name="English_SetPassword_SetNewPass" xml:space="preserve">
+    <value>Set New Password</value>
+    <comment>Used in SetPasswordView. Label: BtnSetNewPass</comment>
+  </data>
+  <data name="English_SetPassword_Title" xml:space="preserve">
+    <value>Set New Wallet Password</value>
+    <comment>Used in SetPasswordView. Window Title</comment>
+  </data>
+  <data name="English_SimpleDialog_Title" xml:space="preserve">
+    <value>Jet Wallet - Notice</value>
+    <comment>Used in SimpleDialogView. Window Title</comment>
+  </data>
+  <data name="English_Welcome_CreateWallet" xml:space="preserve">
+    <value>Create a New Wallet</value>
+    <comment>Used in WelcomeView. Button: BtnCreateWallet</comment>
+  </data>
+  <data name="English_Welcome_Header" xml:space="preserve">
+    <value>Welcome to Jet Wallet</value>
+    <comment>Used in WelcomeView</comment>
+  </data>
+  <data name="English_Welcome_IntroMessage" xml:space="preserve">
+    <value>Thank you for downloading Jet Wallet. Jet Wallet is a Bitcoin Wallet that you can use to send and receive Bitcoin securely. You will find that this wallet software is quite defensive for good reason.</value>
+    <comment>Used in WelcomeView. TextBlock: Intro</comment>
+  </data>
+  <data name="English_Welcome_OutroMessage" xml:space="preserve">
+    <value>Remember to use a strong password when creating a wallet. If you forget your wallet password, you can recover your wallet using the 'Recovery Phrase' uniqely generated for each wallet created.</value>
+    <comment>Used in WelcomeView. TextBlock: Outro</comment>
+  </data>
+  <data name="English_Welcome_QuoteMessage" xml:space="preserve">
+    <value>One of the major motivations of Bitcoin was to give people the ability to control and personally manage their own funds. This software was built to support that motivation. It is also open source.</value>
+    <comment>Used in WelcomeView. TextBlock: Quote</comment>
+  </data>
+  <data name="English_Welcome_Skip" xml:space="preserve">
+    <value>Skip</value>
+    <comment>Used in WelcomeView. Button: BtnSkip</comment>
+  </data>
+</root>

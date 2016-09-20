@@ -1,0 +1,123 @@
+﻿<Controls:MetroWindow x:Class="JetWallet_v1.View.AboutView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        WindowStartupLocation="CenterScreen"
+        EnableDWMDropShadow="True"
+        mc:Ignorable="d ignore"
+        Title="{Binding TextTitle}"
+        TitleCaps="False"
+        WindowTitleBrush="{Binding ColorScheme, FallbackValue='#FF263238'}"
+        ShowMaxRestoreButton="False"
+        ShowMinButton="False"
+        ShowCloseButton="True"
+        FontSize="13"
+        DataContext="{Binding About, Source={StaticResource Locator}}" Width="500" Height="450">
+
+    <Window.Resources>
+        <ResourceDictionary Source="/Resources/Icons.xaml" />
+    </Window.Resources>
+    
+    <Grid Margin="15">
+        <StackPanel Orientation="Vertical">
+            <Label Name="LblAboutHeader" Content="{Binding TextAboutHeader}" FontWeight="Bold"/>
+            <TextBlock Name="TxtDesc" Text="{Binding TextDesc}" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+            <TextBlock Name="TxtLicense" Text="{Binding TextLicense}" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+
+
+            <Label Name="LblResHeader" Content="{Binding TextResHeader}" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="TxtShowLicense" Text="{Binding TextShowLicense}"  TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+                <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
+                    <Hyperlink Command="{Binding OpenLicenseViewCmd}" TextDecorations="{x:Null}">
+                        <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
+                            <Rectangle.Fill>
+                                <VisualBrush Visual="{StaticResource appbar_new_window}" />
+                             </Rectangle.Fill>
+                        </Rectangle>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="TxtShowDoc" Text="{Binding TextShowDoc}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+                <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet_v1" TextDecorations="{x:Null}">
+                        <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
+                            <Rectangle.Fill>
+                                <VisualBrush Visual="{StaticResource appbar_new_window}" />
+                             </Rectangle.Fill>
+                        </Rectangle>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="TxtLearnBitcoin" Text="{Binding TextLearnBitcoin}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+                <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.weusecoins.com/" TextDecorations="{x:Null}">
+                        <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
+                            <Rectangle.Fill>
+                                <VisualBrush Visual="{StaticResource appbar_new_window}" />
+                             </Rectangle.Fill>
+                        </Rectangle>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+
+            <Label Name="LblContactHeader" Content="{Binding TextContactHeader}" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="TxtReportBug" Text="{Binding TextReportBug}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+                <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet_v1/issues" TextDecorations="{x:Null}">
+                        <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
+                            <Rectangle.Fill>
+                                <VisualBrush Visual="{StaticResource appbar_new_window}" />
+                             </Rectangle.Fill>
+                        </Rectangle>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <TextBlock Name="TxtFeedback" Text="{Binding TextFeedback}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="TxtEmail" Text="{Binding TextEmail}" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+                <TextBlock Margin="5,0,0,0" LineHeight="20" FontSize="12">
+                <Hyperlink ToolTip="Click to copy" Command="{Binding CopyCmd}" Foreground="Gray">jgeorges371@gmail.com</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+
+            <Label Name="LblContHeader" Content="{Binding TextContHeader}" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="TxtContribute" Text="{Binding TextContribute}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+                <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet_v1" TextDecorations="{x:Null}">
+                        <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
+                            <Rectangle.Fill>
+                                <VisualBrush Visual="{StaticResource appbar_new_window}" />
+                             </Rectangle.Fill>
+                        </Rectangle>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="TxtTranslate" Text="{Binding TextTranslate}" TextWrapping="Wrap" Margin="5,0,0,0" LineHeight="20" FontSize="12"/>
+                <TextBlock LineHeight="20" FontSize="12" Margin="3,0,0,0">
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/JetJet13/JetWallet_v1/issues" TextDecorations="{x:Null}">
+                        <Rectangle Width="12" Height="12" VerticalAlignment="Center" Margin="0,3,0,0">
+                            <Rectangle.Fill>
+                                <VisualBrush Visual="{StaticResource appbar_new_window}" />
+                             </Rectangle.Fill>
+                        </Rectangle>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            
+            <Label Name="LblThankYou" Content="{Binding TextThankYou}" Margin="0,15,0,0"/>
+        </StackPanel>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0" FontSize="11">
+            JetWallet Copyright © 2016  Johny Georges
+        </TextBlock>
+        <Button Content="{Binding TextOK}" Command="{Binding CloseViewCmd}" Background="{Binding ColorScheme, FallbackValue='#FF263238'}" Foreground="White" VerticalAlignment="Bottom" Margin="0" HorizontalAlignment="Right" Width="100" Height="30"/>
+    </Grid>
+</Controls:MetroWindow>

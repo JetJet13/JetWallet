@@ -1,0 +1,57 @@
+﻿<Controls:MetroWindow x:Class="JetWallet_v1.View.ReceiveView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d ignore"
+        EnableDWMDropShadow="True"
+        WindowStartupLocation="CenterScreen"
+        TitleCaps="False"
+        WindowTitleBrush="{Binding ColorScheme, FallbackValue='#FF263238'}"
+        ShowMaxRestoreButton="False"
+        ShowMinButton="False"
+        ShowCloseButton="False"
+        Title="{Binding TextTitle}"
+        DataContext="{Binding Receive, Source={StaticResource Locator}}" Height="276" Width="550">
+    <Window.Resources>
+        <ResourceDictionary Source="/Resources/Icons.xaml" />
+    </Window.Resources>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+                <Label x:Name="LblAddress" Content="{Binding TextAddress}" FontSize="14" FontWeight="Bold"/>
+                <Label Content="{Binding Address}" Margin="15,0,0,0" FontSize="14" Focusable="True"/>
+                <Button x:Name="BtnCopy" Command="{Binding CopyCmd}" Content="{Binding TextCopy}" Margin="15,0,0,0" MinWidth="65" Height="30"/>
+            </StackPanel>
+            <Image x:Name="image" Source="{Binding QRCodeImage}" Height="100" Width="100" Margin="0,5,0,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0">
+                <Label x:Name="LblNotice" Content="{Binding TextNotice}" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" FontSize="14" Foreground="Gray"/>
+                <Grid Width="40" Height="40">
+                    <Rectangle Grid.Column="1" Margin="0" Fill="{Binding ColorScheme}" Width="20" Height="20" RadiusY="10" RadiusX="10" VerticalAlignment="Center" HorizontalAlignment="Center" Canvas.Left="0">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Visual="{StaticResource appbar_cog}" Stretch="Fill" />
+                        </Rectangle.OpacityMask>
+                        <Rectangle.LayoutTransform>
+                            <RotateTransform/>
+                        </Rectangle.LayoutTransform>
+                        <Rectangle.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="(Rectangle.LayoutTransform).(RotateTransform.Angle)" To="-360" Duration="0:0:3" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </Grid>
+            </StackPanel>
+            <Button x:Name="BtnDone" Content="{Binding TextCancel}" Command="{Binding CancelCmd}" HorizontalAlignment="Center" Margin="0,5,0,15" VerticalAlignment="Bottom" Height="30" MinWidth="150"/>
+
+        </StackPanel>
+    </Grid>
+    
+    
+</Controls:MetroWindow>

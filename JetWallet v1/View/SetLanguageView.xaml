@@ -1,0 +1,25 @@
+﻿<Controls:MetroWindow x:Class="JetWallet_v1.View.SetLanguageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d ignore"
+        Title="Jet Wallet - Set Language"
+        TitleCaps="False"
+        WindowTitleBrush="#FF263238"
+        ShowMaxRestoreButton="False"
+        ShowMinButton="False"
+        ShowCloseButton="False"
+        DataContext="{Binding SetLanguage, Source={StaticResource Locator}}" Height="176" Width="299">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Height="100" Margin="0" VerticalAlignment="Center" Width="200">
+            <Label Content="Set Language" HorizontalAlignment="Center"/>
+            <ComboBox x:Name="comboBox" Margin="0,5,0,0" ItemsSource="{Binding LangList}" SelectedIndex="0" SelectedValue="{Binding SelectedLang, Mode=TwoWay}"/>
+            <Button Content="OK" Command="{Binding SetLanguageCmd}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Margin="0,15,0,0"/>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
