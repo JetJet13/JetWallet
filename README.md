@@ -1,5 +1,7 @@
 # JetWallet - Bitcoin HD Wallet
-JetWallet is a Windows Desktop Bitcoin Wallet that users can use to store, send and receive bitcoin. It also has the added functionality of creating a testnet wallet. It was built with WPF, C# and XAML.
+JetWallet is a lightweight Bitcoin SPV Wallet that users can use to store, send and receive bitcoin. It also has the added functionality of creating a testnet wallet. It was built with WPF, C# and XAML.
+
+Jet Wallet is only available as a Windows Desktop Application
 
 
 ### Installation 
