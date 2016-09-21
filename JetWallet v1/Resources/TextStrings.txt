@@ -1,0 +1,514 @@
+=========================
+English Text Strings
+- every text string is seperated by an empty line
+- please replace each english string with the language you want to translate into.
+- once completed, send me this file by email: jgeorges371@gmail.com and I'll add the new language to JetWallet. 
+- I will also add you as a contributor on the github page. Thanks so much.
+=========================
+
+
+To contribute to this project
+
+JetWallet is a Bitcoin wallet that allows users to hold, send and receive bitcoins.
+
+E-mail
+
+To provide feedback and suggestions
+
+About
+
+Contact
+
+Contribute
+
+Resources
+
+To learn more about bitcoin
+
+This software is open source and licensed under the GNU Public License v3.
+
+To report a bug or defect
+
+For documentation
+
+To view a copy of the license
+
+Thank you for downloading JetWallet
+
+To help with translations
+
+Apr
+
+Aug
+
+Awaiting
+
+BTC
+
+Cancel
+
+Confirmed
+
+Copy
+
+Create Wallet
+
+Description (optional)
+
+A wallet is already active. Would you like to close the current active wallet and make this new wallet active ?
+
+Notice
+
+Password field is required. Wallet password must be at least *NUM* characters.
+
+Password is Insufficient
+
+Name field is required. Password field is required and must be at least *NUM* characters.
+
+Name & Password Required
+
+Name field cannot be empty.
+
+Name is required
+
+Please fill in the following fields to create a new wallet
+
+Name your wallet *
+
+eg. Johny's Wallet
+
+Password protect your wallet *
+
+Testnet *
+
+Not sure? Leave unchecked
+
+Create A New Wallet
+
+Dec
+
+Wallet File does not exist at specified location *path*. This wallet will now close.
+
+Could not lock wallet.
+
+Could not change wallet password.
+
+There already exists Jet Wallet files in the specified path *path* & *recoverypath*. Please give your wallet a new name or delete the existing Jet Wallet Files.
+
+A Jet Wallet file already exists with the name '*name*' in the specified path  *path*. Please give your wallet a new name. Note that the recovery wallet file for '*name*' is missing.
+
+A Jet Wallet recovery file already exists with the name '*name*' in the specified path *recoverypath*. Please give your wallet a new name.
+
+Wallet Files failed to update. Wallet Files do not exist at specified location.
+
+The previously active wallet failed to load. The wallet file could not be found.
+
+The file selected is a Jet Wallet recovery file. You will need the respected Recovery Phrase to unlock the wallet. If you are trying to recover a wallet, use the 'Recover Wallet' option in the File menu tab.
+
+Invalid file type. Jet Wallet files are of the form '.jet' ie) mywallet.jet
+
+Incorrect file type. The file must be a Jet Wallet recovery file. ie) mywallet.recover.jet. Jet Wallet recovery files are hidden by default. You may have to make them visible.
+
+Invalid file type. Jet Wallet Recovery files are of the form '.recover.jet' ie) mywallet.recover.jet
+
+Jet Wallet was unable to fetch data from its online resources. Please check your internet connection and your firewall settings.
+
+Feb
+
+Jan
+
+July
+
+June
+
+A wallet is already active. Would you like to close the present active wallet and make this wallet active?
+
+Close Active Wallet?
+
+No active wallet found. Please import or create a new wallet.
+
+No Wallet Active
+
+The wallet you are trying to import is already active.
+
+Same Wallet
+
+All wallet actions are not available while the wallet is loading.
+
+Wallet Loading
+
+Recent Transactions
+
+No Wallet Active.
+
+Import or Create a Wallet by clicking on File in the Menu Bar.
+
+_About
+
+Amber
+
+Blue
+
+Blue Grey
+
+Brown
+
+Check for updates
+
+Close Wallet
+
+Color Scheme
+
+Currency
+
+Cyan
+
+Deep Orange
+
+Deep Purple
+
+Exit
+
+_File
+
+Green
+
+Import Wallet
+
+Indigo
+
+Language
+
+License
+
+Light Blue
+
+Light Green
+
+Lime Green
+
+Manage Wallet
+
+New Wallet
+
+Orange
+
+Pink
+
+Purple
+
+Recover Wallet
+
+Red
+
+Resources
+
+_Settings
+
+Teal
+
+Yellow
+
+No Wallet
+
+Receive Bitcoin
+
+Send Bitcoin
+
+*action* *amount* BTC (*symbol**curramount* *curr*)
+
+*action* *amount* tBTC 
+
+Change your Wallet Password
+
+Change Password
+
+Confirm New Password
+
+Enter Current Password
+
+All password fields are required. Please try again.
+
+Incomplete Fields
+
+The current password entered was incorrect. Please try again.
+
+Incorrect Current Password
+
+New password needs to be at least *NUM* characters. Please try again.
+
+Insufficient New Password
+
+The current wallet password entered is incorrect and the confirmation password did not match the new password. Please try again.
+
+Invalid Inputs
+
+The new password cannot match the current password. Please try again.
+
+Current and New Password Match
+
+Wallet password changed successfuly.
+
+Success
+
+The new password and confirmation password do not match. Please try again.
+
+Password Do Not Match
+
+Export Wallet Summary
+
+Password lock your wallet
+
+Lock Wallet
+
+Enter New Password
+
+Repair Wallet
+
+Manage Wallet
+
+Mar
+
+May
+
+Nov
+
+Oct
+
+OK
+
+The wallet '*name*' will not be loaded.
+
+Continue?
+
+Incorrect password. Please try again.
+
+Please enter the password associated with the wallet '*name*'
+
+Please enter the password associated with the wallet '*name*'
+
+Enter Wallet Password
+
+Unlock Wallet
+
+Address
+
+A transaction hasn't appeared that is associated with the following bitcoin address. Once the sender has broadcasted the transaction, it will process and your wallet will update in the background.
+
+Done Waiting ?
+
+The sender has broadcasted the transaction. *amount* BTC will be deposited into your wallet shortly.
+
+Transaction Found
+
+Waiting for transaction to appear
+
+Receive Bitcoin
+
+Received
+
+Unfortunately, the Recovery Phrase entered was incorrect. Please try again.
+
+Unsuccessful Attempt
+
+Congratulations, the wallet '*name*' was retrieved successfully.
+
+Success
+
+You are attempting to recover the wallet '*name*'
+
+Enter the Recovery Phrase associated with the wallet in the text box below.
+
+Make sure to leave a space after each word
+
+Recover
+
+Recover Wallet
+
+Recovery Phrase
+
+The following bold text of words is your newly created wallet's 'Recovery Phrase'. The Recovery Phrase is used to recover your wallet when you forget/misplace your password.
+
+This is the only time you will have access to the Recovery Phrase so store it somewhere safe and away from prying eyes. This phrase is the only alternative to recover a wallet who's password is forgotton/lost.
+
+Wallet Recovery Phrase
+
+Amount *
+
+Available Balance
+
+You are about to send 
+
+*btc_amount* *btc_symbol* (*symbol* *curr_amount* *curr*) to 
+
+*address*. 
+
+All transactions are final and irreversible once broadcasted. Continue ?
+
+Confirmation
+
+Please enter an address in the reciepient address field
+
+Empty Address Field
+
+The password field cannot be empty.
+
+Empty Password Field
+
+The password entered was incorrect. Please try again.
+
+Incorrect Password
+
+The address  you have entered is invalid. Please try again.
+
+Invalid Address
+
+The amount of bitcoin you are attempting to send is greater then the amount of bitcoin you have. Please lower the amount of bitcoin you are trying to send.
+
+Insufficient Funds
+
+Success. The transaction has been broadcasted to the network. 
+
+Sent Bitcoin
+
+An attempt to broadcast the transaction was unsuccessful. Please try again. If the problem persists, please check your network connection.
+
+Send Failed
+
+Example: 178adALA4BWNsyyZuNWutDMvQJYRmuLwrs
+
+Fee
+
+Max
+
+Wallet Password *
+
+Receipient Address *
+
+Send
+
+Send Bitcoin
+
+Sent
+
+Sep
+
+Confirm Password
+
+All password fields are required. Please try again.
+
+Incomplete Fields
+
+New password needs to be at least *NUM* characters. Please try again.
+
+Insufficient New Password
+
+The new password and confirmation password do not match. Please try again.
+
+Passwords Do Not Match
+
+Wallet password changed successfuly.
+
+Success
+
+Set A New Password
+
+Now that you have recovered your wallet, give it a new password.
+
+New Password
+
+Set New Password
+
+Set New Wallet Password
+
+Jet Wallet - Notice
+
+Block Hash
+
+Block Height
+
+Confirmations
+
+Transaction is CONFIRMED
+
+Unfortunately, JetWallet could not retrieve the data requested. Sorry for the inconvenience. Please try again at a later time.
+
+Data Unavailable
+
+Fee
+
+Waiting for  *num* more confirmations
+
+Waiting for  *num* more confirmation
+
+Status
+
+Timestamp
+
+Transaction Details
+
+Transaction Hash
+
+Transaction is UNCONFIRMED
+
+Unconfirmed
+
+The following list contains all the address associated with this wallet
+
+Addresses
+
+Available Balance
+
+Balance
+
+Date Created
+
+Description
+
+Details
+
+File Location
+
+Name
+
+Network
+
+Num. Received
+
+Num. Sent
+
+Num. Transactions
+
+Search
+
+Wallet Information
+
+Transactions
+
+Action
+
+Amount
+
+Date
+
+The following is a list of all transactions associated with this wallet
+
+Hash
+
+Status
+
+Value
+
+Unconfirmed Balance
+
+Create a New Wallet
+
+Welcome to Jet Wallet
+
+Thank you for downloading Jet Wallet. Jet Wallet is a Bitcoin Wallet that you can use to send and receive Bitcoin securely. You will find that this wallet software is quite defensive for good reason.
+
+Remember to use a strong password when creating a wallet. If you forget your wallet password, you can recover your wallet using the 'Recovery Phrase' uniqely generated for each wallet created.
+
+One of the major motivations of Bitcoin was to give people the ability to control and personally manage their own funds. This software was built to support that motivation. It is also open source.
+
+Skip
