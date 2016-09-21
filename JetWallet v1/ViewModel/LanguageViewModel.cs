@@ -41,7 +41,7 @@ namespace JetWallet.ViewModel
 
         public LanguageViewModel()
         {
-            LanguageList = new List<string>() { "English", "French", "Spanish" };
+            LanguageList = new List<string>() { "English" };
         }
 
         public void SetLanguage(string lang)

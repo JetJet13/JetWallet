@@ -21,7 +21,7 @@
     <Grid>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Center">
             <TextBlock x:Name="textBlock" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding PromptMessage}" VerticalAlignment="Center" FontSize="14" FontFamily="Segoe UI" HorizontalAlignment="Center" LineHeight="22" Width="450"/>
-            <Button Content="{Binding TextOk}" Margin="0,20,0,0" Command="{Binding CloseViewCmd}" Background="{ Binding ColorScheme, FallbackValue='#FF263238' }" Width="70" Height="30" Foreground="White" />
+            <Button Content="{Binding TextOk}" Margin="0,20,0,0" Command="{Binding CloseViewCmd}" Background="{ Binding ColorScheme, FallbackValue='#FF263238' }" Height="30" Foreground="White" HorizontalAlignment="Center" MinWidth="70" />
         </StackPanel>
     </Grid>
 </Controls:MetroWindow>
