@@ -2,7 +2,7 @@
 English Text Strings
 - every text string is seperated by an empty line
 - please replace each english string with the language you want to translate into.
-- once completed, send me this file by email: jgeorges371@gmail.com and I'll add the new language to JetWallet. 
+- once completed, send me the file by email: jgeorges371@gmail.com and I'll add the new language to JetWallet. 
 - I will also add you as a contributor on the github page. Thanks so much.
 =========================
 
