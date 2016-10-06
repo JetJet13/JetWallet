@@ -518,3 +518,7 @@ Connected Nodes
 Height
 
 Num. Txs
+
+About
+
+License
