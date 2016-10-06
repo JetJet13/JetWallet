@@ -57,6 +57,30 @@ namespace JetWallet.Components
             }
         }
 
+        // Tooltip text for nodes icon
+        private string _textnodes;
+        public string TextNodes
+        {
+            get { return _textnodes; }
+            set { _textnodes = value; RaisePropertyChanged("TextNodes"); }
+        }
+
+        // Tooltip text for height icon
+        private string _textheight;
+        public string TextHeight
+        {
+            get { return _textheight; }
+            set { _textheight = value; RaisePropertyChanged("TextHeight"); }
+        }
+
+        // Tooltip text for num txs icon
+        private string _textnumtxs;
+        public string TextNumTxs
+        {
+            get { return _textnumtxs; }
+            set { _textnumtxs = value; RaisePropertyChanged("TextNumTxs"); }
+        }
+
 
         public const string NetPropertyName = "Net";
 
@@ -181,7 +205,10 @@ namespace JetWallet.Components
                 Wallet.UpdateBalanceCurrDisplay();
                 
             }
-            
+
+            TextNodes = TextTools.RetrieveStringFromResource("Main_Tooltip_Nodes");
+            TextHeight = TextTools.RetrieveStringFromResource("Main_Tooltip_Height");
+            TextNumTxs = TextTools.RetrieveStringFromResource("Main_Tooltip_NumTxs");
             TextPrice = String.Format("1 BTC = {0}{1} {2}", Global.VML.Currency.ActiveSymbol, Global.VML.Currency.ActivePrice, Global.VML.Currency.ActiveCurrency);
                    
         }

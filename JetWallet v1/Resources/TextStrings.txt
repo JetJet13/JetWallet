@@ -93,25 +93,25 @@ Could not lock wallet.
 
 Could not change wallet password.
 
-There already exists Jet Wallet files in the specified path *path* & *recoverypath*. Please give your wallet a new name or delete the existing Jet Wallet Files.
+There already exists JetWallet files in the specified path *path* & *recoverypath*. Please give your wallet a new name or delete the existing JetWallet Files.
 
-A Jet Wallet file already exists with the name '*name*' in the specified path  *path*. Please give your wallet a new name. Note that the recovery wallet file for '*name*' is missing.
+A JetWallet file already exists with the name '*name*' in the specified path  *path*. Please give your wallet a new name. Note that the recovery wallet file for '*name*' is missing.
 
-A Jet Wallet recovery file already exists with the name '*name*' in the specified path *recoverypath*. Please give your wallet a new name.
+A JetWallet recovery file already exists with the name '*name*' in the specified path *recoverypath*. Please give your wallet a new name.
 
 Wallet Files failed to update. Wallet Files do not exist at specified location.
 
 The previously active wallet failed to load. The wallet file could not be found.
 
-The file selected is a Jet Wallet recovery file. You will need the respected Recovery Phrase to unlock the wallet. If you are trying to recover a wallet, use the 'Recover Wallet' option in the File menu tab.
+The file selected is a JetWallet recovery file. You will need the respected Recovery Phrase to unlock the wallet. If you are trying to recover a wallet, use the 'Recover Wallet' option in the File menu tab.
 
-Invalid file type. Jet Wallet files are of the form '.jet' ie) mywallet.jet
+Invalid file type. JetWallet files are of the form '.jet' ie) mywallet.jet
 
-Incorrect file type. The file must be a Jet Wallet recovery file. ie) mywallet.recover.jet. Jet Wallet recovery files are hidden by default. You may have to make them visible.
+Incorrect file type. The file must be a JetWallet recovery file. ie) mywallet.recover.jet. JetWallet recovery files are hidden by default. You may have to make them visible.
 
-Invalid file type. Jet Wallet Recovery files are of the form '.recover.jet' ie) mywallet.recover.jet
+Invalid file type. JetWallet Recovery files are of the form '.recover.jet' ie) mywallet.recover.jet
 
-Jet Wallet was unable to fetch data from its online resources. Please check your internet connection and your firewall settings.
+JetWallet was unable to fetch data from its online resources. Please check your internet connection and your firewall settings.
 
 Feb
 
@@ -421,7 +421,7 @@ Set New Password
 
 Set New Wallet Password
 
-Jet Wallet - Notice
+JetWallet - Notice
 
 Block Hash
 
@@ -503,12 +503,18 @@ Unconfirmed Balance
 
 Create a New Wallet
 
-Welcome to Jet Wallet
+Welcome to JetWallet
 
-Thank you for downloading Jet Wallet. Jet Wallet is a Bitcoin Wallet that you can use to send and receive Bitcoin securely. You will find that this wallet software is quite defensive for good reason.
+Thank you for downloading JetWallet. JetWallet is a Bitcoin Wallet that you can use to send and receive Bitcoin securely. You will find that this wallet software is quite defensive for good reason.
 
 Remember to use a strong password when creating a wallet. If you forget your wallet password, you can recover your wallet using the 'Recovery Phrase' uniqely generated for each wallet created.
 
 One of the major motivations of Bitcoin was to give people the ability to control and personally manage their own funds. This software was built to support that motivation. It is also open source.
 
 Skip
+
+Connected Nodes
+
+Height
+
+Num. Txs

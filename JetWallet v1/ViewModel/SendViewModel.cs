@@ -389,12 +389,12 @@ namespace JetWallet.ViewModel
                 return;
             }
            
-            var fee = _wallet.CalculateFee(Balance);
+            var fee = _wallet.CalculateFee(_wallet.AvailableBalance);
             AmountFee = fee;
             AmountFeeCurr = Converters.Btc2Currency(fee);
             // subtract fee amount from available balance
             // to get amount of BTC to send
-            Money btc = Balance - AmountFee;
+            Money btc = _wallet.AvailableBalance - AmountFee;
             AmountBtc = (btc).ToString();
             decimal newAmountCurr = Converters.Btc2Currency(btc);
             AmountCurr = newAmountCurr.ToString();
@@ -446,8 +446,8 @@ namespace JetWallet.ViewModel
                 var result = await _sview.ShowMessageAsync(titleConfirm, messageConfirm, MessageDialogStyle.AffirmativeAndNegative);
                 if (result.Equals(MessageDialogResult.Affirmative))
                 {
-                    var sendAttempt = _wallet.SendBitcoin(readyTx);
-                    if (sendAttempt.Result.Equals(true))
+                    var sendAttempt = await _wallet.SendBitcoin(readyTx);
+                    if (sendAttempt.Equals(true))
                     {
                         string titleSuccess = TextTools.RetrieveStringFromResource("Send_Dialog_Success_Title");
                         string messageSuccess = TextTools.RetrieveStringFromResource("Send_Dialog_Success_Message");

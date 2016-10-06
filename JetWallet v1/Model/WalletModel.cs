@@ -470,8 +470,7 @@ namespace JetWallet.Model
             
             DisplayName = newName;
             _folder = Path.Combine(App.WalletsDir, this.Name);
-            FileLocation = Path.Combine(_folder, "wallet.jet");
-            FileRecover = Path.Combine(_folder, "wallet.recover.jet");
+            this.SetFileLocations();
             Desc = description;
             this.Created = newCreated;
             this.SetWalletSecurity(WalletSecurity.Unlock);
@@ -481,6 +480,8 @@ namespace JetWallet.Model
             this.NewWalletTransaction += new NewWalletTransactionDelegate(CheckNewTransaction);
             
         }
+
+        
 
         public void Initialize()
         {
@@ -704,6 +705,18 @@ namespace JetWallet.Model
         public string GetWalletFolderPath()
         {
             return _folder;
+        }
+
+        public void SetWalletFolderPath(string path)
+        {
+            _folder = path;
+            this.SetFileLocations();
+        }
+
+        private void SetFileLocations()
+        {
+            FileLocation = Path.Combine(_folder, "wallet.jet");
+            FileRecover = Path.Combine(_folder, "wallet.recover.jet");
         }
 
         public string LogFile()

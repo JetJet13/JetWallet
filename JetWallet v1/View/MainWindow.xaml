@@ -126,22 +126,34 @@
                         <SolidColorBrush Color="{Binding FillStateLight}"/>
                     </Ellipse.Fill>
                 </Ellipse>
-            </StatusBarItem>            
-            <StatusBarItem>
-                <Label Foreground="White">Nodes</Label>
+            </StatusBarItem>
+            <StatusBarItem Margin="25,0,0,0" ToolTip="{Binding StatusBarComp.TextNodes}">
+                <Rectangle Fill="White" Width="15" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Visual="{StaticResource appbar_diagram}" Stretch="Fill" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
             </StatusBarItem>
             <StatusBarItem>
                 <Label x:Name="LblNodes" Content="{Binding StatusBarComp.Wallet.ConnNodes, FallbackValue='0'}" Foreground="White"/>
             </StatusBarItem>
-            <StatusBarItem>
-                <Label Foreground="White">Height</Label>
+            <StatusBarItem  Margin="25,0,0,0" ToolTip="{Binding StatusBarComp.TextHeight}">
+                <Rectangle Fill="White" Width="15" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Visual="{StaticResource appbar_box}" Stretch="Fill" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
             </StatusBarItem>
             <StatusBarItem>
                 <Label x:Name="LblHeight" Content="{Binding StatusBarComp.Wallet.CurrentHeight, FallbackValue='0'}" Foreground="White"/>
             </StatusBarItem>
             
-            <StatusBarItem>
-                <Label Foreground="White">Num. Txs</Label>
+            <StatusBarItem Margin="25,0,0,0" ToolTip="{Binding StatusBarComp.TextNumTxs}">
+                <Rectangle Grid.Column="1" Margin="0" Fill="White" Width="15" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Visual="{StaticResource appbar_arrow_right_left}" Stretch="Fill" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
             </StatusBarItem>            
             <StatusBarItem>
                 <Label x:Name="LblNumTxs" Content="{Binding StatusBarComp.Wallet.NumTxs, FallbackValue='0'}" Foreground="White"/>

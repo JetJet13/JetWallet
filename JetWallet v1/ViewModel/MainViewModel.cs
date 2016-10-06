@@ -359,7 +359,7 @@ namespace JetWallet.ViewModel
 
         private void SetupWallet(WalletModel newWallet)
         {
-            Logger.StartLogging(newWallet.Name);
+            Logger.StartLogging(newWallet.GetWalletFolderPath());
                         
             MainWallet = newWallet;
             MainWallet.Initialize();                     
@@ -493,7 +493,7 @@ namespace JetWallet.ViewModel
         private void UpdateLanguage(string s)
         {
             Lang = s;
-            TextTitle = "Jet Wallet - " + Lang;
+            TextTitle = "JetWallet - " + Lang;
 
             this.TextNoWallet = TextTools.RetrieveStringFromResource("Main_NoWallet");
             this.TextSend = TextTools.RetrieveStringFromResource("Main_Send");
@@ -512,6 +512,8 @@ namespace JetWallet.ViewModel
             this.FileTab.UpdateText();
             this.SettingsTab.UpdateText();
             this.ResourceTab.UpdateText();
+
+            this.StatusBarComp.UpdateText();
         }
         private void SetStateLight()
         {

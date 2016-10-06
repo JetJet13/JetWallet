@@ -76,6 +76,7 @@ namespace JetWallet.ViewModel
          private void OpenView(string s)
         {
             RecoveryPhrase = s;
+
             _rpview = new RecoveryPhraseView();
             _rpview.ShowDialog();
         }

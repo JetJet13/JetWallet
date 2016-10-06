@@ -94,6 +94,7 @@ namespace JetWallet.ViewModel
             _path = path;
             _walletname = TextTools.DecodeWalletName(path);
             Header = "You are attempting to recover the wallet '" + _walletname +"'";
+            RecoverPhrase = string.Empty;
             _rwview = new RecoverWalletView();
             _rwview.ShowDialog();
         }

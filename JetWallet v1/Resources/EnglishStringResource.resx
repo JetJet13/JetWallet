@@ -204,15 +204,15 @@ refers to the cleint not being able to locate the wallet file at the location sp
     <comment>Used in ManageWalletView. Error_A100 occured when the user tried to change the wallet password</comment>
   </data>
   <data name="Error_A200" xml:space="preserve">
-    <value>There already exists Jet Wallet files in the specified path *path* &amp; *recoverypath*. Please give your wallet a new name or delete the existing Jet Wallet Files.</value>
+    <value>There already exists JetWallet files in the specified path *path* &amp; *recoverypath*. Please give your wallet a new name or delete the existing JetWallet Files.</value>
     <comment>Error_A200 refers to the situation where a user is trying to create a wallet with a name that is already in use/taken.</comment>
   </data>
   <data name="Error_A201" xml:space="preserve">
-    <value>A Jet Wallet file already exists with the name '*name*' in the specified path  *path*. Please give your wallet a new name. Note that the recovery wallet file for '*name*' is missing.</value>
+    <value>A JetWallet file already exists with the name '*name*' in the specified path  *path*. Please give your wallet a new name. Note that the recovery wallet file for '*name*' is missing.</value>
     <comment>Error_A201 refers to the situation where a user is trying to create a wallet with a name that is already in use. However, the recovery file associated with the existing wallet is missing.</comment>
   </data>
   <data name="Error_A202" xml:space="preserve">
-    <value>A Jet Wallet recovery file already exists with the name '*name*' in the specified path *recoverypath*. Please give your wallet a new name.</value>
+    <value>A JetWallet recovery file already exists with the name '*name*' in the specified path *recoverypath*. Please give your wallet a new name.</value>
     <comment>Error_A202 refers to the situation where a user is trying to create a wallet with a name this is already in use. However, the regular .jet wallet file is missing and only the recovery file is found.</comment>
   </data>
   <data name="Error_A300" xml:space="preserve">
@@ -224,19 +224,19 @@ refers to the cleint not being able to locate the wallet file at the location sp
     <comment>Error_A400 refers to situation where the previously active wallet file location could not be found. This error appears at the start of the application when the user is prompted to enter the password for the previously active wallet.</comment>
   </data>
   <data name="Error_A500" xml:space="preserve">
-    <value>The file selected is a Jet Wallet recovery file. You will need the respected Recovery Phrase to unlock the wallet. If you are trying to recover a wallet, use the 'Recover Wallet' option in the File menu tab.</value>
+    <value>The file selected is a JetWallet recovery file. You will need the respected Recovery Phrase to unlock the wallet. If you are trying to recover a wallet, use the 'Recover Wallet' option in the File menu tab.</value>
     <comment>Error_A500 refers to the situation where the user is trying to import a jet wallet recovery file instead of a regular jet wallet file</comment>
   </data>
   <data name="Error_A501" xml:space="preserve">
-    <value>Invalid file type. Jet Wallet files are of the form '.jet' ie) mywallet.jet</value>
+    <value>Invalid file type. JetWallet files are of the form '.jet' ie) mywallet.jet</value>
     <comment>Error_A501 refers to the situation where the user is trying to import an invalid file type, that is, a non jet wallet file.</comment>
   </data>
   <data name="Error_A502" xml:space="preserve">
-    <value>Incorrect file type. The file must be a Jet Wallet recovery file. ie) mywallet.recover.jet. Jet Wallet recovery files are hidden by default. You may have to make them visible.</value>
+    <value>Incorrect file type. The file must be a JetWallet recovery file. ie) mywallet.recover.jet. JetWallet recovery files are hidden by default. You may have to make them visible.</value>
     <comment>Error_A502 refers to the situation where the user is trying to recover a wallet, and imports a regular jet wallet file.</comment>
   </data>
   <data name="Error_A503" xml:space="preserve">
-    <value>Invalid file type. Jet Wallet Recovery files are of the form '.recover.jet' ie) mywallet.recover.jet</value>
+    <value>Invalid file type. JetWallet Recovery files are of the form '.recover.jet' ie) mywallet.recover.jet</value>
     <comment>Error_A503 refers to the situation where the user is trying to recover a wallet, and imports an invalid file type, ie) .jpg file </comment>
   </data>
   <data name="Main_Dialog_ActiveWallet_Message" xml:space="preserve">
@@ -615,7 +615,7 @@ Note the *name* in the Value section. That is replaced during runtime</comment>
     <comment>Used in SetPasswordView. Window Title</comment>
   </data>
   <data name="SimpleDialog_Title" xml:space="preserve">
-    <value>Jet Wallet - Notice</value>
+    <value>JetWallet - Notice</value>
     <comment>Used in SimpleDialogView. Window Title</comment>
   </data>
   <data name="Receive_Title" xml:space="preserve">
@@ -627,11 +627,11 @@ Note the *name* in the Value section. That is replaced during runtime</comment>
     <comment>Used in WelcomeView. Button: BtnCreateWallet</comment>
   </data>
   <data name="Welcome_Header" xml:space="preserve">
-    <value>Welcome to Jet Wallet</value>
+    <value>Welcome to JetWallet</value>
     <comment>Used in WelcomeView</comment>
   </data>
   <data name="Welcome_IntroMessage" xml:space="preserve">
-    <value>Thank you for downloading Jet Wallet. Jet Wallet is a Bitcoin Wallet that you can use to send and receive Bitcoin securely. You will find that this wallet software is quite defensive for good reason.</value>
+    <value>Thank you for downloading JetWallet. JetWallet is a Bitcoin Wallet that you can use to send and receive Bitcoin securely. You will find that this wallet software is quite defensive for good reason.</value>
     <comment>Used in WelcomeView. TextBlock: Intro</comment>
   </data>
   <data name="Welcome_OutroMessage" xml:space="preserve">
@@ -1110,7 +1110,7 @@ All transactions are final and irreversible once broadcasted. Continue ?</value>
     <comment>Used in SendView. Dialog box appears when the user confirms sending the funds and the transaction could not be broadcasted.</comment>
   </data>
   <data name="Error_N100" xml:space="preserve">
-    <value>Jet Wallet was unable to fetch data from its online resources. Please check your internet connection and your firewall settings.</value>
+    <value>JetWallet was unable to fetch data from its online resources. Please check your internet connection and your firewall settings.</value>
     <comment>Error_A200 refers to the situation where JetWallet could not retrieve data from its online resources. ie) BTC price, fee rate</comment>
   </data>
   <data name="TxInfo_Dialog_Fail_Message" xml:space="preserve">
@@ -1120,5 +1120,17 @@ All transactions are final and irreversible once broadcasted. Continue ?</value>
   <data name="TxInfo_Dialog_Fail_Title" xml:space="preserve">
     <value>Data Unavailable</value>
     <comment>Used in TxInfoView. Dialog Box appears when both blockchain api resources fail. Either due to downtime or no internet connection.</comment>
+  </data>
+  <data name="Main_Tooltip_Height" xml:space="preserve">
+    <value>Height</value>
+    <comment>Used in Main Window. Tooltip for Height icon</comment>
+  </data>
+  <data name="Main_Tooltip_Nodes" xml:space="preserve">
+    <value>Connected Nodes</value>
+    <comment>Used in Main Window. Tooltip for Nodes icon</comment>
+  </data>
+  <data name="Main_Tooltip_NumTxs" xml:space="preserve">
+    <value>Num. Txs</value>
+    <comment>Used in Main Window. Tooltip for Num Txs. icon</comment>
   </data>
 </root>

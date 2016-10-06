@@ -19,23 +19,27 @@ namespace JetWallet.Tools
             set;
         }
 
-        public static void SetFilePath(string walletId)
+        
+        public static void StartLogging(string walletFolderPath)
         {
-            string logpath = Path.Combine(App.WalletsDir, walletId, "debug.log");
-            FilePath = logpath;
-        }
-        public static void StartLogging(string walletId)
-        {
-            SetFilePath(walletId);
+            SetFilePath(walletFolderPath);
             fs = File.Open(FilePath, FileMode.Append);
             writer = new StreamWriter(fs);
         }
+
+        public static void SetFilePath(string walletFolderPath)
+        {
+            string logpath = Path.Combine(walletFolderPath, "debug.log");
+            FilePath = logpath;
+        }
+
         public static void StopLogging()
         {            
             writer.Dispose();
             writer = null;
             fs.Dispose();            
         }
+
         public static void WriteLine(string content)
         {
                 if (writer == null)

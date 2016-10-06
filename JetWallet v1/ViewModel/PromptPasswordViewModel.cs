@@ -159,7 +159,10 @@ namespace JetWallet.ViewModel
                 WalletModel wallet = FileTools.DecryptWallet(_file, passHash);
 
                 // sets wallet file property to file path in which it was imported from.
-                wallet.FileLocation = _file;
+                var folderPath = _file.Replace("\\wallet.jet","").Trim();
+
+                wallet.SetWalletFolderPath(folderPath);
+                //wallet.FileLocation = _file;
                 Messenger.Default.Send<WalletModel>(wallet, "ChangeActiveWallet");
                 _ppview.Close();
             }
