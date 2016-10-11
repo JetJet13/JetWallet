@@ -18,6 +18,9 @@ If you would like to contribute to the source code, fork this repo, then submit 
 ### Feedback
 if you have any questions, you can email me at jgeorges371@gmail.com. If you found a bug or defect while using JetWallet, raise an issue and I'll try my best to resolve it.
 
+### Donations
+If your feeling generous, here is a bitcoin address 19Ex5TVw4hitSz2JWiv3zNPDPzQn76DrjN
+
 ### Acknowledgements
 I would like to thank the creator of [NBitcoin](https://github.com/MetacoSA/NBitcoin), Nicolas Dorier for which this application is built upon.
 
