@@ -9,8 +9,7 @@ using System.Threading;
 
 /// <summary>
 ///    JetWallet is a Bitcoin wallet that let's users hold, send and receive bitcoins.
-///    At the time of writing, JetWallet is only available on Windows.
-/// 
+///
 ///    JetWallet Copyright(C) 2016  Johny Georges
 ///
 ///    This program is free software: you can redistribute it and/or modify

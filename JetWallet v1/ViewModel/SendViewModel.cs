@@ -433,16 +433,33 @@ namespace JetWallet.ViewModel
                 Money AmountToSend = Money.Parse(AmountBtc);
                                 
                 var readyTx = _wallet.BuildTransaction(ReceipientAddress, AmountToSend, AmountFee);
-
+                var networkChoice = Network.GetNetworkFromBase58Data(ReceipientAddress);
+                string titleConfirm;
+                string messageConfirm;
                 //PROMPT USER FOR CONFIRMATION
-                string titleConfirm = TextTools.RetrieveStringFromResource("Send_Dialog_Confirm_Title");
-                string messageConfirm = TextTools.RetrieveStringFromResource("Send_Dialog_Confirm_Message")
-                    .Replace("*btc_amount*", AmountBtc)
-                    .Replace("*btc_symbol*", Global.VML.UiSettings.Symbol)
-                    .Replace("*symbol*", Global.VML.Currency.ActiveSymbol)
-                    .Replace("*curr_amount*", AmountCurr)
-                    .Replace("*curr*", Global.VML.Currency.ActiveCurrency)
-                    .Replace("*address*", ReceipientAddress);
+                if (networkChoice.Equals(Network.TestNet))
+                {
+                    
+                    titleConfirm = TextTools.RetrieveStringFromResource("Send_Dialog_Confirm_Title");
+                    messageConfirm = TextTools.RetrieveStringFromResource("Send_Dialog_Confirm_Message_Testnet")
+                        .Replace("*btc_amount*", AmountBtc)
+                        .Replace("*btc_symbol*", Global.VML.UiSettings.Symbol)
+                        .Replace("*address*", ReceipientAddress);
+
+                }
+                else
+                {
+
+                    titleConfirm = TextTools.RetrieveStringFromResource("Send_Dialog_Confirm_Title");
+                    messageConfirm = TextTools.RetrieveStringFromResource("Send_Dialog_Confirm_Message_Mainnet")
+                        .Replace("*btc_amount*", AmountBtc)
+                        .Replace("*btc_symbol*", Global.VML.UiSettings.Symbol)
+                        .Replace("*symbol*", Global.VML.Currency.ActiveSymbol)
+                        .Replace("*curr_amount*", AmountCurr)
+                        .Replace("*curr*", Global.VML.Currency.ActiveCurrency)
+                        .Replace("*address*", ReceipientAddress);
+                }
+                
                 var result = await _sview.ShowMessageAsync(titleConfirm, messageConfirm, MessageDialogStyle.AffirmativeAndNegative);
                 if (result.Equals(MessageDialogResult.Affirmative))
                 {

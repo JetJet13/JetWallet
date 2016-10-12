@@ -802,7 +802,7 @@ Note the *name* in the Value section. That is replaced during runtime</comment>
     <value>Send Bitcoin</value>
     <comment>Used in SendView. Window Title</comment>
   </data>
-  <data name="Send_Dialog_Confirm_Message" xml:space="preserve">
+  <data name="Send_Dialog_Confirm_Message_Mainnet" xml:space="preserve">
     <value>You are about to send 
 *btc_amount* *btc_symbol* (*symbol* *curr_amount* *curr*) to 
 *address*. 
@@ -1140,5 +1140,12 @@ All transactions are final and irreversible once broadcasted. Continue ?</value>
   <data name="Main_Tooltip_NumTxs" xml:space="preserve">
     <value>Num. Txs</value>
     <comment>Used in Main Window. Tooltip for Num Txs. icon</comment>
+  </data>
+  <data name="Send_Dialog_Confirm_Message_Testnet" xml:space="preserve">
+    <value>You are about to send 
+*btc_amount* *btc_symbol*  to 
+*address*. 
+All transactions are final and irreversible once broadcasted. Continue ?</value>
+    <comment>Used in SendView. Dialog box appears as when the user is about to send bitcoin. It is a final confirmation before the transaction is built and broadcasted to the network.</comment>
   </data>
 </root>
