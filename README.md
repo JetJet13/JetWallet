@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/JetJet13/JetWallet.svg?branch=master)](https://travis-ci.org/JetJet13/JetWallet)
 [![Coverage Status](https://coveralls.io/repos/github/JetJet13/JetWallet/badge.svg?branch=master)](https://coveralls.io/github/JetJet13/JetWallet?branch=master)
 
 # JetWallet - Bitcoin HD Wallet
