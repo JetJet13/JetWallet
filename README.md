@@ -8,7 +8,7 @@ Jet Wallet is only available as a Windows Desktop Application
 
 
 ### Installation 
-Download and install the [.msi installer](http://jetwallet.io/download)
+Download and install the [.msi installer](http://jetwallet.io/msi)
 
 ### Documentation
 For docs, there is [GitHub wiki](https://github.com/JetJet13/JetWallet/wiki) 
