@@ -31,4 +31,4 @@ If your feeling generous, here is a bitcoin address 19Ex5TVw4hitSz2JWiv3zNPDPzQn
 I would like to thank the creator of [NBitcoin](https://github.com/MetacoSA/NBitcoin), Nicolas Dorier for which this application is built upon.
 
 ### License
-JetWallet is released under the GNU General Public License v3
+JetWallet is released under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
