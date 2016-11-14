@@ -1148,4 +1148,8 @@ All transactions are final and irreversible once broadcasted. Continue ?</value>
 All transactions are final and irreversible once broadcasted. Continue ?</value>
     <comment>Used in SendView. Dialog box appears as when the user is about to send bitcoin. It is a final confirmation before the transaction is built and broadcasted to the network.</comment>
   </data>
+  <data name="Welcome_Title" xml:space="preserve">
+    <value>Welcome</value>
+    <comment>Used in WelcomeView. Window Title</comment>
+  </data>
 </root>

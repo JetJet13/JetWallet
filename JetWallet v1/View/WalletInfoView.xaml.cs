@@ -6,7 +6,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for WalletInfoView.
     /// </summary>
-    public partial class WalletInfoView : MetroWindow
+    public partial class WalletInfoView : MetroWindow, IView
     {
         /// <summary>
         /// Initializes a new instance of the WalletInfoView class.
@@ -14,6 +14,11 @@ namespace JetWallet.View
         public WalletInfoView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "WalletInfoView";
         }
     }
 }

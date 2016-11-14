@@ -8,6 +8,8 @@
         mc:Ignorable="d ignore"
         ShowMinButton="False"
         ShowMaxRestoreButton="False"
+        WindowStartupLocation="CenterScreen"
+        EnableDWMDropShadow="True"
         Title="{Binding TextTitle}"
         TitleCaps="False"
         WindowTitleBrush="{Binding ColorScheme}"

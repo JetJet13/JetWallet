@@ -128,9 +128,7 @@ namespace JetWallet.Model
                 }
 
             }
-                    
  
-           
         }
 
         private string GetTrackerFile()

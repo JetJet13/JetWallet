@@ -11,14 +11,8 @@ using JetWallet.Model;
 
 namespace JetWallet.Tools
 {
-    public class MaterialColorThemes:INotifyPropertyChanged
+    public class MaterialColorThemes
     {
-
-        public Color ColorPick
-        {
-            get;
-            set;
-        }
 
         private static Color _red = Color.FromArgb(255, 183, 28, 28);
         public static Color Red { get { return _red; } }
@@ -77,21 +71,5 @@ namespace JetWallet.Tools
         private static Color _bluegrey = Color.FromArgb(255, 38, 50, 56);
         public static Color BlueGrey { get { return _bluegrey; } }
 
-        
-        #region INotifyPropertyChanged Members
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged(string propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-
-        #endregion
     }
 }

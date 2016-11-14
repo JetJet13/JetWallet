@@ -6,7 +6,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for RecoverWalletView.
     /// </summary>
-    public partial class RecoverWalletView : MetroWindow
+    public partial class RecoverWalletView : MetroWindow, IView
     {
         /// <summary>
         /// Initializes a new instance of the RecoverWalletView class.
@@ -14,6 +14,11 @@ namespace JetWallet.View
         public RecoverWalletView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "RecoverWalletView";
         }
     }
 }

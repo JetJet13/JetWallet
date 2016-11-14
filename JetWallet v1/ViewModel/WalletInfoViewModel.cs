@@ -165,12 +165,7 @@ namespace JetWallet.ViewModel
             set { _wallet = value; }
         }
 
-        public string WalletCreated
-        {
-            get { return TextTools.FormatFullDate(Wallet.Created.ToLocalTime()); }
-        }
-
-
+        
         public const string WalletAddressesPropertyName = "WalletAddresses";
         private ICollectionView _walletaddresses;
         public ICollectionView WalletAddresses

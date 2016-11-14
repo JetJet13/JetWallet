@@ -17,6 +17,7 @@ using NBitcoin;
 using System.Threading.Tasks;
 using System.Windows;
 using NBitcoin.SPV;
+using JetWallet.Controller;
 
 namespace JetWallet.ViewModel
 {
@@ -256,6 +257,7 @@ namespace JetWallet.ViewModel
             Messenger.Default.Register<string>(this, "NewLanguage", (string s) => { this.UpdateLanguage(s); });
             Messenger.Default.Register<string>(this, "NewCurrency", (string s) => { this.UpdateCurrency(s); });
             Messenger.Default.Register<string>(this, "ShowMainWindow", (string s) => { this.ShowMainView(); });
+            
         }
 
 

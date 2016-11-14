@@ -175,7 +175,7 @@ namespace JetWallet.ViewModel
             
             CreateWalletCmd = new RelayCommand(() => { this.ExecuteCreateWallet(); });
             CloseViewCmd = new RelayCommand(() => { this.ExecuteCloseView(); });
-            Messenger.Default.Register<string>(this, "OpenCreateWalletView", (string s)=> { this.ExecuteOpenCreateWalletView(); });
+            //Messenger.Default.Register<string>(this, "OpenCreateWalletView", (string s)=> { this.ExecuteOpenCreateWalletView(); });
         }
 
         public RelayCommand CreateWalletCmd

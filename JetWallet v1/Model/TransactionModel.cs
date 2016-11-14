@@ -22,6 +22,7 @@ namespace JetWallet.Model
         Sent,
         Received
     }
+
     /// <summary>
     /// TransactionModel is used to display/retrieve information regarding
     /// sent and received transactions
@@ -103,10 +104,6 @@ namespace JetWallet.Model
             }
         }
 
-        public Money Fee
-        {
-            get { return new Money(1000); }
-        }
 
         private string _blockid;
         public string BlockId
@@ -121,13 +118,6 @@ namespace JetWallet.Model
         {
             get { return _confirmations; }
             set { _confirmations = value; }
-        }
-        public string ShortId
-        {
-            get
-            {
-                return Id.Substring(0, 16);
-            }
         }
 
         public DateTimeOffset FirstSeen
@@ -204,7 +194,7 @@ namespace JetWallet.Model
         }
         private string GetBlockId()
         {
-            return _Transaction.BlockInformation == null ? null : _Transaction.BlockInformation.Header.GetHash().ToString();
+            return _Transaction.BlockInformation == null ? string.Empty : _Transaction.BlockInformation.Header.GetHash().ToString();
         }
 
         private string GetConfs()

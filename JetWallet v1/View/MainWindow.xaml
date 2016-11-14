@@ -8,6 +8,7 @@
         xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d ignore"
         WindowStartupLocation="CenterScreen"
+        EnableDWMDropShadow="True"
         TitleCaps="False"
         WindowTitleBrush="{Binding ColorScheme, FallbackValue='#FF263238'}"
         ShowMaxRestoreButton="False"

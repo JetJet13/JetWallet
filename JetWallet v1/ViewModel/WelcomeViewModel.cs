@@ -19,6 +19,11 @@ namespace JetWallet.ViewModel
             get { return new SolidColorBrush(Global.VML.ColorScheme.ColorPick); }
         }
 
+        public string TextTitle
+        {
+            get { return TextTools.RetrieveStringFromResource("Welcome_Title"); }
+        }
+
         public string TextHeader
         {
             get { return TextTools.RetrieveStringFromResource("Welcome_Header"); }
@@ -52,7 +57,7 @@ namespace JetWallet.ViewModel
         {
             CreateWalletCmd = new RelayCommand(() => { this.ExecuteCloseView(); Messenger.Default.Send<string>("", "OpenCreateWalletView"); });
             CloseViewCmd = new RelayCommand(() => { this.ExecuteCloseView(); });
-            Messenger.Default.Register<string>(this, "OpenWelcomeView", (string s) => { this.ExecuteOpenView(); });
+            //Messenger.Default.Register<string>(this, "OpenWelcomeView", (string s) => { this.ExecuteOpenView(); });
         }
 
         public RelayCommand CreateWalletCmd

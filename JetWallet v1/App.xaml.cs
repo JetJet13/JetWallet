@@ -6,6 +6,8 @@ using JetWallet.ViewModel;
 using System.Diagnostics;
 using JetWallet.View;
 using System.Threading;
+using JetWallet.Model;
+using JetWallet.Controller;
 
 /// <summary>
 ///    JetWallet is a Bitcoin wallet that let's users hold, send and receive bitcoins.
@@ -36,7 +38,7 @@ namespace JetWallet
     /// </summary>
     public partial class App : Application
     {
-
+        
         public static string AppDir
         {
             get { return System.AppDomain.CurrentDomain.BaseDirectory; }
@@ -52,25 +54,32 @@ namespace JetWallet
             }
         }
 
-        private static Mutex myMutex;
-        public static void ExistingInstance()
+        protected override void OnStartup(StartupEventArgs e)
         {
-            bool aIsNewInstance = false;
-            myMutex = new Mutex(true, "JetWallet", out aIsNewInstance);
-            if (!aIsNewInstance)
+            ExistingInstance();
+            base.OnStartup(e);
+        }
+
+        private void ExistingInstance()
+        {
+            // Get Reference to the current Process
+            Process thisProc = Process.GetCurrentProcess();
+            // Check how many total processes have the same name as the current one
+            if (Process.GetProcessesByName(thisProc.ProcessName).Length > 1)
             {
-                MessageBox.Show("JetWallet is already running");
-                App.Current.Shutdown();
+                // If ther is more than one, than it is already running.
+                MessageBox.Show("JetWallet is already running.");
+                Application.Current.Shutdown();
+                return;
             }
         }
 
         static App()
-        {
+        {            
             DispatcherHelper.Initialize();
             CheckAppDirectory();
             CheckWalletsDirectory();
-           
-            
+
         }
 
         private static void CheckAppDirectory()

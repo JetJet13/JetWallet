@@ -7,7 +7,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for SetPasswordView.
     /// </summary>
-    public partial class SetPasswordView : MetroWindow
+    public partial class SetPasswordView : MetroWindow, IView
     {
         
         /// <summary>
@@ -16,6 +16,11 @@ namespace JetWallet.View
         public SetPasswordView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "SetPasswordView";
         }
 
         private void NewPassChanged(object sender, RoutedEventArgs e)

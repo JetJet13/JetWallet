@@ -46,7 +46,7 @@ namespace JetWallet.ViewModel
         {
             
             SetLanguageCmd = new RelayCommand(() => { this.ExecuteSetLanguage(); });
-            Messenger.Default.Register<string>(this, "OpenSetLanguageView", (string s) => { this.OpenView(); });
+            //Messenger.Default.Register<string>(this, "OpenSetLanguageView", (string s) => { this.OpenView(); });
         }
 
 
@@ -71,7 +71,7 @@ namespace JetWallet.ViewModel
         
         private void CloseView()
         {
-            _slview.Close();
+            
         }
     }
 }

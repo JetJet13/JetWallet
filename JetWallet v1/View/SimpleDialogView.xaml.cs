@@ -6,7 +6,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for FileMissingView.
     /// </summary>
-    public partial class SimpleDialogView : MetroWindow
+    public partial class SimpleDialogView : MetroWindow, IView
     {
         /// <summary>
         /// Initializes a new instance of the FileMissingView class.
@@ -15,5 +15,11 @@ namespace JetWallet.View
         {
             InitializeComponent();
         }
+
+        public override string ToString()
+        {
+            return "SimpleDialogView";
+        }
+
     }
 }

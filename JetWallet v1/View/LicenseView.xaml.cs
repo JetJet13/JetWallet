@@ -7,7 +7,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for LicenseView.
     /// </summary>
-    public partial class LicenseView : MetroWindow
+    public partial class LicenseView : MetroWindow, IView
     {
         /// <summary>
         /// Initializes a new instance of the LicenseView class.
@@ -15,6 +15,11 @@ namespace JetWallet.View
         public LicenseView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "LicenseView";
         }
 
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)

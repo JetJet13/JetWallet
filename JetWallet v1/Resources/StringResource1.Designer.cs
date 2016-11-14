@@ -22,21 +22,21 @@ namespace JetWallet.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class StringResource {
+    public class StringResource {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal StringResource() {
+        public StringResource() {
         }
         
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JetWallet.Resources.StringResource", typeof(StringResource).Assembly);
@@ -51,7 +51,7 @@ namespace JetWallet.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
-        internal static string English_Cancel {
+        public static string English_Cancel {
             get {
                 return ResourceManager.GetString("English_Cancel", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Create Wallet.
         /// </summary>
-        internal static string English_CreateWallet_CreateWallet {
+        public static string English_CreateWallet_CreateWallet {
             get {
                 return ResourceManager.GetString("English_CreateWallet_CreateWallet", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Description (optional).
         /// </summary>
-        internal static string English_CreateWallet_Desc {
+        public static string English_CreateWallet_Desc {
             get {
                 return ResourceManager.GetString("English_CreateWallet_Desc", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please fill in the following fields to create a new wallet.
         /// </summary>
-        internal static string English_CreateWallet_Message {
+        public static string English_CreateWallet_Message {
             get {
                 return ResourceManager.GetString("English_CreateWallet_Message", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Name your wallet *.
         /// </summary>
-        internal static string English_CreateWallet_Name {
+        public static string English_CreateWallet_Name {
             get {
                 return ResourceManager.GetString("English_CreateWallet_Name", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to eg. Johny&apos;s Wallet.
         /// </summary>
-        internal static string English_CreateWallet_NameExample {
+        public static string English_CreateWallet_NameExample {
             get {
                 return ResourceManager.GetString("English_CreateWallet_NameExample", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Password protect your wallet *.
         /// </summary>
-        internal static string English_CreateWallet_Pass {
+        public static string English_CreateWallet_Pass {
             get {
                 return ResourceManager.GetString("English_CreateWallet_Pass", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Testnet *.
         /// </summary>
-        internal static string English_CreateWallet_Testnet {
+        public static string English_CreateWallet_Testnet {
             get {
                 return ResourceManager.GetString("English_CreateWallet_Testnet", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Not sure? Leave unchecked.
         /// </summary>
-        internal static string English_CreateWallet_TestnetMessage {
+        public static string English_CreateWallet_TestnetMessage {
             get {
                 return ResourceManager.GetString("English_CreateWallet_TestnetMessage", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Create A New Wallet.
         /// </summary>
-        internal static string English_CreateWallet_Title {
+        public static string English_CreateWallet_Title {
             get {
                 return ResourceManager.GetString("English_CreateWallet_Title", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to  Wallet File does not exist at specified location *path*. This wallet will now close..
         /// </summary>
-        internal static string English_Error_A100 {
+        public static string English_Error_A100 {
             get {
                 return ResourceManager.GetString("English_Error_A100", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Could not lock wallet..
         /// </summary>
-        internal static string English_Error_A100_Lock {
+        public static string English_Error_A100_Lock {
             get {
                 return ResourceManager.GetString("English_Error_A100_Lock", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Could not change wallet password..
         /// </summary>
-        internal static string English_Error_A100_Pass {
+        public static string English_Error_A100_Pass {
             get {
                 return ResourceManager.GetString("English_Error_A100_Pass", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Change your Wallet Password.
         /// </summary>
-        internal static string English_ManageWallet_ChangeMessage {
+        public static string English_ManageWallet_ChangeMessage {
             get {
                 return ResourceManager.GetString("English_ManageWallet_ChangeMessage", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Change Password.
         /// </summary>
-        internal static string English_ManageWallet_ChangePass {
+        public static string English_ManageWallet_ChangePass {
             get {
                 return ResourceManager.GetString("English_ManageWallet_ChangePass", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Confirm New Password.
         /// </summary>
-        internal static string English_ManageWallet_ConfPass {
+        public static string English_ManageWallet_ConfPass {
             get {
                 return ResourceManager.GetString("English_ManageWallet_ConfPass", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter Current Password.
         /// </summary>
-        internal static string English_ManageWallet_CurrPass {
+        public static string English_ManageWallet_CurrPass {
             get {
                 return ResourceManager.GetString("English_ManageWallet_CurrPass", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to All password fields are required. Please try again..
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Incomplete_Message {
+        public static string English_ManageWallet_Dialog_Incomplete_Message {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Incomplete_Message", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Incomplete Fields.
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Incomplete_Title {
+        public static string English_ManageWallet_Dialog_Incomplete_Title {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Incomplete_Title", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The current password entered was incorrect. Please try again..
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Incorrect_Message {
+        public static string English_ManageWallet_Dialog_Incorrect_Message {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Incorrect_Message", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Incorrect Current Password.
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Incorrect_Title {
+        public static string English_ManageWallet_Dialog_Incorrect_Title {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Incorrect_Title", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to New password needs to be at least 4 characters. Please try again..
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Insufficient_Message {
+        public static string English_ManageWallet_Dialog_Insufficient_Message {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Insufficient_Message", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Insufficient New Password.
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Insufficient_Title {
+        public static string English_ManageWallet_Dialog_Insufficient_Title {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Insufficient_Title", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The current wallet password entered is incorrect and the confirmation password did not match the new password. Please try again..
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Invalid_Message {
+        public static string English_ManageWallet_Dialog_Invalid_Message {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Invalid_Message", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Invalid Inputs.
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Invalid_Title {
+        public static string English_ManageWallet_Dialog_Invalid_Title {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Invalid_Title", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The new password cannot match the current password. Please try again..
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Match_Message {
+        public static string English_ManageWallet_Dialog_Match_Message {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Match_Message", resourceCulture);
             }
@@ -297,7 +297,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Current and New Password Match.
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Match_Title {
+        public static string English_ManageWallet_Dialog_Match_Title {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Match_Title", resourceCulture);
             }
@@ -306,7 +306,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Wallet password changed successfuly..
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Success_Message {
+        public static string English_ManageWallet_Dialog_Success_Message {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Success_Message", resourceCulture);
             }
@@ -315,7 +315,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Success.
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Success_Title {
+        public static string English_ManageWallet_Dialog_Success_Title {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Success_Title", resourceCulture);
             }
@@ -324,7 +324,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The new password and confirmation password do not match. Please try again..
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Unequal_Message {
+        public static string English_ManageWallet_Dialog_Unequal_Message {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Unequal_Message", resourceCulture);
             }
@@ -333,7 +333,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Password Do Not Match.
         /// </summary>
-        internal static string English_ManageWallet_Dialog_Unequal_Title {
+        public static string English_ManageWallet_Dialog_Unequal_Title {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Dialog_Unequal_Title", resourceCulture);
             }
@@ -342,7 +342,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Password lock your wallet.
         /// </summary>
-        internal static string English_ManageWallet_LockMessage {
+        public static string English_ManageWallet_LockMessage {
             get {
                 return ResourceManager.GetString("English_ManageWallet_LockMessage", resourceCulture);
             }
@@ -351,7 +351,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Lock Wallet.
         /// </summary>
-        internal static string English_ManageWallet_LockWallet {
+        public static string English_ManageWallet_LockWallet {
             get {
                 return ResourceManager.GetString("English_ManageWallet_LockWallet", resourceCulture);
             }
@@ -360,7 +360,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter New Password.
         /// </summary>
-        internal static string English_ManageWallet_NewPass {
+        public static string English_ManageWallet_NewPass {
             get {
                 return ResourceManager.GetString("English_ManageWallet_NewPass", resourceCulture);
             }
@@ -369,7 +369,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Manage Wallet.
         /// </summary>
-        internal static string English_ManageWallet_Title {
+        public static string English_ManageWallet_Title {
             get {
                 return ResourceManager.GetString("English_ManageWallet_Title", resourceCulture);
             }
@@ -378,7 +378,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
-        internal static string English_Ok {
+        public static string English_Ok {
             get {
                 return ResourceManager.GetString("English_Ok", resourceCulture);
             }
@@ -387,7 +387,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The wallet &apos;*name*&apos; will not be loaded..
         /// </summary>
-        internal static string English_PromptPassword_DialogMessage {
+        public static string English_PromptPassword_DialogMessage {
             get {
                 return ResourceManager.GetString("English_PromptPassword_DialogMessage", resourceCulture);
             }
@@ -396,7 +396,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Continue?.
         /// </summary>
-        internal static string English_PromptPassword_DialogTitle {
+        public static string English_PromptPassword_DialogTitle {
             get {
                 return ResourceManager.GetString("English_PromptPassword_DialogTitle", resourceCulture);
             }
@@ -406,7 +406,7 @@ namespace JetWallet.Resources {
         ///   Looks up a localized string similar to Incorrect password. Please try again.
         ///Please enter the password associated with the wallet &apos;*name*&apos;.
         /// </summary>
-        internal static string English_PromptPassword_IncorrectMessage {
+        public static string English_PromptPassword_IncorrectMessage {
             get {
                 return ResourceManager.GetString("English_PromptPassword_IncorrectMessage", resourceCulture);
             }
@@ -415,7 +415,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please enter the password associated with the wallet &apos;*name*&apos;.
         /// </summary>
-        internal static string English_PromptPassword_Message {
+        public static string English_PromptPassword_Message {
             get {
                 return ResourceManager.GetString("English_PromptPassword_Message", resourceCulture);
             }
@@ -424,7 +424,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter Wallet Password.
         /// </summary>
-        internal static string English_PromptPassword_Title {
+        public static string English_PromptPassword_Title {
             get {
                 return ResourceManager.GetString("English_PromptPassword_Title", resourceCulture);
             }
@@ -433,7 +433,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Unlock Wallet.
         /// </summary>
-        internal static string English_PromptPassword_UnlockWallet {
+        public static string English_PromptPassword_UnlockWallet {
             get {
                 return ResourceManager.GetString("English_PromptPassword_UnlockWallet", resourceCulture);
             }
@@ -442,7 +442,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You are attempting to recover the wallet &apos;*name*&apos;.
         /// </summary>
-        internal static string English_RecoverWallet_Header {
+        public static string English_RecoverWallet_Header {
             get {
                 return ResourceManager.GetString("English_RecoverWallet_Header", resourceCulture);
             }
@@ -451,7 +451,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter the Recovery Phrase associated with the wallet in the text box below..
         /// </summary>
-        internal static string English_RecoverWallet_Message {
+        public static string English_RecoverWallet_Message {
             get {
                 return ResourceManager.GetString("English_RecoverWallet_Message", resourceCulture);
             }
@@ -460,7 +460,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Make sure to leave a space after each word.
         /// </summary>
-        internal static string English_RecoverWallet_Note {
+        public static string English_RecoverWallet_Note {
             get {
                 return ResourceManager.GetString("English_RecoverWallet_Note", resourceCulture);
             }
@@ -469,7 +469,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Recover.
         /// </summary>
-        internal static string English_RecoverWallet_Recover {
+        public static string English_RecoverWallet_Recover {
             get {
                 return ResourceManager.GetString("English_RecoverWallet_Recover", resourceCulture);
             }
@@ -478,7 +478,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Recover Wallet.
         /// </summary>
-        internal static string English_RecoverWallet_Title {
+        public static string English_RecoverWallet_Title {
             get {
                 return ResourceManager.GetString("English_RecoverWallet_Title", resourceCulture);
             }
@@ -487,7 +487,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Recovery Phrase.
         /// </summary>
-        internal static string English_RecoveryPhrase_Header {
+        public static string English_RecoveryPhrase_Header {
             get {
                 return ResourceManager.GetString("English_RecoveryPhrase_Header", resourceCulture);
             }
@@ -496,7 +496,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The following bold text of words is your newly created wallet&apos;s &apos;Recovery Phrase&apos;. The Recovery Phrase is used to recover your wallet when you forget/misplace your password..
         /// </summary>
-        internal static string English_RecoveryPhrase_Intro {
+        public static string English_RecoveryPhrase_Intro {
             get {
                 return ResourceManager.GetString("English_RecoveryPhrase_Intro", resourceCulture);
             }
@@ -505,7 +505,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to This is the only time you will have access to the Recovery Phrase so store it somewhere safe and away from prying eyes. This phrase is the only alternative to recover a wallet who&apos;s password is forgotton/lost..
         /// </summary>
-        internal static string English_RecoveryPhrase_Outro {
+        public static string English_RecoveryPhrase_Outro {
             get {
                 return ResourceManager.GetString("English_RecoveryPhrase_Outro", resourceCulture);
             }
@@ -514,7 +514,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Wallet Recovery Phrase.
         /// </summary>
-        internal static string English_RecoveryPhrase_Title {
+        public static string English_RecoveryPhrase_Title {
             get {
                 return ResourceManager.GetString("English_RecoveryPhrase_Title", resourceCulture);
             }
@@ -523,7 +523,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Confirm Password.
         /// </summary>
-        internal static string English_SetPassword_ConfPass {
+        public static string English_SetPassword_ConfPass {
             get {
                 return ResourceManager.GetString("English_SetPassword_ConfPass", resourceCulture);
             }
@@ -532,7 +532,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Set A New Password.
         /// </summary>
-        internal static string English_SetPassword_Header {
+        public static string English_SetPassword_Header {
             get {
                 return ResourceManager.GetString("English_SetPassword_Header", resourceCulture);
             }
@@ -541,7 +541,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Now that you have recovered your wallet, give it a new password..
         /// </summary>
-        internal static string English_SetPassword_Message {
+        public static string English_SetPassword_Message {
             get {
                 return ResourceManager.GetString("English_SetPassword_Message", resourceCulture);
             }
@@ -550,7 +550,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to New Password.
         /// </summary>
-        internal static string English_SetPassword_NewPass {
+        public static string English_SetPassword_NewPass {
             get {
                 return ResourceManager.GetString("English_SetPassword_NewPass", resourceCulture);
             }
@@ -559,7 +559,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Set New Password.
         /// </summary>
-        internal static string English_SetPassword_SetNewPass {
+        public static string English_SetPassword_SetNewPass {
             get {
                 return ResourceManager.GetString("English_SetPassword_SetNewPass", resourceCulture);
             }
@@ -568,7 +568,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Set New Wallet Password.
         /// </summary>
-        internal static string English_SetPassword_Title {
+        public static string English_SetPassword_Title {
             get {
                 return ResourceManager.GetString("English_SetPassword_Title", resourceCulture);
             }
@@ -577,7 +577,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Jet Wallet - Notice.
         /// </summary>
-        internal static string English_SimpleDialog_Title {
+        public static string English_SimpleDialog_Title {
             get {
                 return ResourceManager.GetString("English_SimpleDialog_Title", resourceCulture);
             }
@@ -586,7 +586,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Create a New Wallet.
         /// </summary>
-        internal static string English_Welcome_CreateWallet {
+        public static string English_Welcome_CreateWallet {
             get {
                 return ResourceManager.GetString("English_Welcome_CreateWallet", resourceCulture);
             }
@@ -595,7 +595,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Welcome to Jet Wallet.
         /// </summary>
-        internal static string English_Welcome_Header {
+        public static string English_Welcome_Header {
             get {
                 return ResourceManager.GetString("English_Welcome_Header", resourceCulture);
             }
@@ -604,7 +604,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Thank you for downloading Jet Wallet. Jet Wallet is a Bitcoin Wallet that you can use to send and receive Bitcoin securely. You will find that this wallet software is quite defensive for good reason..
         /// </summary>
-        internal static string English_Welcome_IntroMessage {
+        public static string English_Welcome_IntroMessage {
             get {
                 return ResourceManager.GetString("English_Welcome_IntroMessage", resourceCulture);
             }
@@ -613,7 +613,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Remember to use a strong password when creating a wallet. If you forget your wallet password, you can recover your wallet using the &apos;Recovery Phrase&apos; uniqely generated for each wallet created..
         /// </summary>
-        internal static string English_Welcome_OutroMessage {
+        public static string English_Welcome_OutroMessage {
             get {
                 return ResourceManager.GetString("English_Welcome_OutroMessage", resourceCulture);
             }
@@ -622,7 +622,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to One of the major motivations of Bitcoin was to give people the ability to control and personally manage their own funds. This software was built to support that motivation. It is also open source..
         /// </summary>
-        internal static string English_Welcome_QuoteMessage {
+        public static string English_Welcome_QuoteMessage {
             get {
                 return ResourceManager.GetString("English_Welcome_QuoteMessage", resourceCulture);
             }
@@ -631,7 +631,7 @@ namespace JetWallet.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Skip.
         /// </summary>
-        internal static string English_Welcome_Skip {
+        public static string English_Welcome_Skip {
             get {
                 return ResourceManager.GetString("English_Welcome_Skip", resourceCulture);
             }

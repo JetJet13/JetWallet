@@ -45,12 +45,5 @@ namespace JetWallet.Tools
                 return bitmapImage;
             }
         }
-
-        public static string ByteArrayToHexString(byte[] value)
-        {
-            SoapHexBinary shb = new SoapHexBinary(value);
-            return shb.ToString();
-        }
-
     }
 }

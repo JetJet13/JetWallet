@@ -6,6 +6,7 @@
         xmlns:ignore="http://www.galasoft.ch/ignore"
         xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         WindowStartupLocation="CenterScreen"
+        EnableDWMDropShadow="True"
         mc:Ignorable="d ignore"
         Title="Jet Wallet - Set Language"
         TitleCaps="False"
@@ -13,13 +14,13 @@
         ShowMaxRestoreButton="False"
         ShowMinButton="False"
         ShowCloseButton="False"
-        DataContext="{Binding SetLanguage, Source={StaticResource Locator}}" Height="176" Width="299">
+        DataContext="{Binding JetSetLanguage, Source={StaticResource Locator}}" Height="176" Width="299">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" Height="100" Margin="0" VerticalAlignment="Center" Width="200">
             <Label Content="Set Language" HorizontalAlignment="Center"/>
-            <ComboBox x:Name="comboBox" Margin="0,5,0,0" ItemsSource="{Binding LangList}" SelectedIndex="0" SelectedValue="{Binding SelectedLang, Mode=TwoWay}"/>
-            <Button Content="OK" Command="{Binding SetLanguageCmd}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Margin="0,15,0,0"/>
+            <ComboBox x:Name="comboBox" Margin="0,5,0,0" ItemsSource="{Binding LanguageList}" SelectedIndex="0" SelectedValue="{Binding SelectedLanguage, Mode=TwoWay}"/>
+            <Button Name="BtnOK" Content="OK" Command="{Binding SetConfigLanguage}" Click="CloseWindow" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Margin="0,15,0,0"/>
         </StackPanel>
     </Grid>
 </Controls:MetroWindow>

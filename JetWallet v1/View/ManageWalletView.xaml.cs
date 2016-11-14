@@ -8,7 +8,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for ManageWalletView.
     /// </summary>
-    public partial class ManageWalletView : MetroWindow
+    public partial class ManageWalletView : MetroWindow, IView
     {
         
         /// <summary>
@@ -17,6 +17,11 @@ namespace JetWallet.View
         public ManageWalletView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "ManageWalletView";
         }
 
         private void CurrPassChanged(object sender, RoutedEventArgs e)

@@ -194,8 +194,6 @@ namespace JetWallet.Tools
 
             using (FileStream fsread = new FileStream(path, FileMode.Open, FileAccess.Read))
             {
-
-
                 ICryptoTransform desdecrypt = AES.CreateDecryptor();
 
                 try

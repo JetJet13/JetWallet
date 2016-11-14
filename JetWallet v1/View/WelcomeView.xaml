@@ -6,14 +6,15 @@
         xmlns:ignore="http://www.galasoft.ch/ignore"
         xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         WindowStartupLocation="CenterScreen"
+        EnableDWMDropShadow="True"
         mc:Ignorable="d ignore"
-        Title=""
+        Title="{Binding TextTitle}"
         TitleCaps="False"
         WindowTitleBrush="{Binding ColorScheme}"
         ShowMaxRestoreButton="False"
         ShowMinButton="False"
         ShowCloseButton="False"
-        DataContext="{Binding Welcome, Source={StaticResource Locator}}" Width="479">
+        DataContext="{Binding JetWelcome, Source={StaticResource Locator}}" Width="479" Height="475">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="90"/>
@@ -25,8 +26,8 @@
             <TextBlock x:Name="Outro" Text="{Binding TextOutroMessage}" TextWrapping="Wrap" FontSize="14" FontFamily="Segoe UI" Width="375" Margin="0,15,0,0" LineHeight="20"></TextBlock>
             <TextBlock x:Name="Quote" Text="{Binding TextQuoteMessage}" TextWrapping="Wrap" FontSize="12" FontFamily="Segoe UI" Width="375" Margin="0,20,0,0" LineHeight="20" FontStyle="Italic"></TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,25,0,0">
-                <Button x:Name="BtnCreateWallet" Command="{Binding CreateWalletCmd}" Background="{ Binding ColorScheme, FallbackValue='#FF263238' }" Content="{Binding TextCreateWallet}" Height="30" Foreground="White"/>
-                <Button x:Name="BtnSkip" Content="{Binding TextSkip}" Command="{Binding CloseViewCmd}" Margin="15,0,0,0"/>
+                <Button x:Name="BtnCreateWallet" Click="OpenCreateWalletView"  Background="{ Binding ColorScheme, FallbackValue='#FF263238' }" Content="{Binding TextCreateWallet}" Height="30" Foreground="White"/>
+                <Button x:Name="BtnSkip" Click="CloseWindow" Content="{Binding TextSkip}" Margin="15,0,0,0"/>
             </StackPanel>
 
         </StackPanel>

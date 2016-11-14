@@ -9,8 +9,8 @@ using System.Diagnostics;
 namespace JetWallet.Model
 {
     /// <summary>
-    /// Wallet Key holds the private key, public key, and key path
-    /// of an associated walletmodel
+    /// Wallet Key contains a private key, a public key, and its corresponding key path 
+    /// relative to its master key.
     /// </summary>
     public class WalletKey
     {
@@ -64,7 +64,7 @@ namespace JetWallet.Model
             PrivKey = rootKey.Derive(keyPath);
             PublicKey = PrivKey.PrivateKey.PubKey;
             KeyPath = keyPath;
-            ScriptKey = PublicKey.Hash.ScriptPubKey;
+            ScriptKey = PublicKey.ScriptPubKey.Hash.ScriptPubKey;
             Address = PublicKey.GetAddress(net);
             Consumed = false;
             
@@ -72,8 +72,9 @@ namespace JetWallet.Model
        
         public bool MatchPublicKey(Script script)
         {
-            var scriptHex = script.ToHex();
-            if (ScriptKey.ToHex().Equals(scriptHex))
+            var scriptHex = script.Hash.ScriptPubKey.ToHex();
+            var keyScriptHex = ScriptKey.ToHex();
+            if (keyScriptHex.Equals(scriptHex))
             {
                 return true;
             }
@@ -81,8 +82,7 @@ namespace JetWallet.Model
         }
         public bool MatchKeyPath(uint i)
         {
-            // each KeyPath Index looks like [0,N], so N is what we are using to select
-            // the pubkey
+            // each KeyPath Index looks like [0,N], so N is what we are using to match key paths
             return KeyPath.Indexes.Contains(i);
             
         }

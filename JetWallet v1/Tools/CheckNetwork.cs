@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace JetWallet.Tools
 {
-    class CheckNetwork
+    public class CheckNetwork
     {
         public static void Status()
         {

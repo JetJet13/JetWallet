@@ -32,12 +32,14 @@ namespace JetWallet.ViewModel
             SimpleIoc.Default.Register<PromptPasswordViewModel>(true);
             SimpleIoc.Default.Register<ManageWalletViewModel>(true);
             SimpleIoc.Default.Register<WelcomeViewModel>(true);
+            SimpleIoc.Default.Register<JetWelcomeViewModel>(true);
             SimpleIoc.Default.Register<SimpleDialogViewModel>(true);
             SimpleIoc.Default.Register<RecoverWalletViewModel>(true);
             SimpleIoc.Default.Register<RecoveryPhraseViewModel>(true);
             SimpleIoc.Default.Register<SetPasswordViewModel>(true);
             SimpleIoc.Default.Register<ColorSchemeViewModel>(true);
             SimpleIoc.Default.Register<SetLanguageViewModel>(true);
+            SimpleIoc.Default.Register<JetSetLanguageViewModel>(true);
             SimpleIoc.Default.Register<ReceiveViewModel>(true);
             SimpleIoc.Default.Register<SendViewModel>(true);
             SimpleIoc.Default.Register<TxInfoViewModel>(true);
@@ -97,6 +99,14 @@ namespace JetWallet.ViewModel
             }
         }
 
+        public JetWelcomeViewModel JetWelcome
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<JetWelcomeViewModel>();
+            }
+        }
+
         public SimpleDialogViewModel SimpleDialog
         {
             get
@@ -142,6 +152,14 @@ namespace JetWallet.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<SetLanguageViewModel>();
+            }
+        }
+
+        public JetSetLanguageViewModel JetSetLanguage
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<JetSetLanguageViewModel>();
             }
         }
 

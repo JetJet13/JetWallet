@@ -7,7 +7,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for PromptPasswordView.
     /// </summary>
-    public partial class PromptPasswordView : MetroWindow
+    public partial class PromptPasswordView : MetroWindow, IView
     {
        
         /// <summary>
@@ -16,6 +16,11 @@ namespace JetWallet.View
         public PromptPasswordView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "PromptPasswordView";
         }
 
         private void passChanged(object sender, RoutedEventArgs e)

@@ -6,7 +6,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for TxInfoView.
     /// </summary>
-    public partial class TxInfoView : MetroWindow
+    public partial class TxInfoView : MetroWindow, IView
     {
         /// <summary>
         /// Initializes a new instance of the TxInfoView class.
@@ -14,6 +14,11 @@ namespace JetWallet.View
         public TxInfoView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "TxInfoView";
         }
     }
 }

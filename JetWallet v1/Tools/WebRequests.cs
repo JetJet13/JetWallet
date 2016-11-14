@@ -13,7 +13,7 @@ namespace JetWallet.Tools
     {
         public static string GET(string url)
         {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            WebRequest request = WebRequest.Create(url);
             try
             {
                 WebResponse response = request.GetResponse();
@@ -29,5 +29,6 @@ namespace JetWallet.Tools
             }
            
         }
+
     }
 }

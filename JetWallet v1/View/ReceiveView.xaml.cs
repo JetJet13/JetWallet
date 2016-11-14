@@ -6,7 +6,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for ReceiveView.
     /// </summary>
-    public partial class ReceiveView : MetroWindow
+    public partial class ReceiveView : MetroWindow, IView
     {
         /// <summary>
         /// Initializes a new instance of the ReceiveView class.
@@ -14,6 +14,11 @@ namespace JetWallet.View
         public ReceiveView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "ReceiveView";
         }
     }
 }

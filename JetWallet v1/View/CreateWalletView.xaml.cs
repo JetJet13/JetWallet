@@ -7,7 +7,7 @@ namespace JetWallet.View
     /// <summary>
     /// Description for CreateWalletView.
     /// </summary>
-    public partial class CreateWalletView : MetroWindow
+    public partial class CreateWalletView : MetroWindow, IView
     {
 
         /// <summary>
@@ -16,6 +16,11 @@ namespace JetWallet.View
         public CreateWalletView()
         {
             InitializeComponent();
+        }
+
+        public override string ToString()
+        {
+            return "CreateWalletView";
         }
 
         private void PassChanged(object sender, RoutedEventArgs e)
