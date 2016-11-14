@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/JetJet13/JetWallet.svg?branch=master)](https://travis-ci.org/JetJet13/JetWallet)
+[![Coverage Status](https://coveralls.io/repos/github/JetJet13/JetWallet/badge.svg?branch=master)](https://coveralls.io/github/JetJet13/JetWallet?branch=master)
+
 # JetWallet - Bitcoin HD Wallet
 JetWallet is a lightweight Bitcoin SPV Wallet that users can use to store, send and receive bitcoin. It also has the added functionality of creating a testnet wallet. It was built with WPF, C# and XAML.
 
@@ -5,7 +8,7 @@ Jet Wallet is only available as a Windows Desktop Application
 
 
 ### Installation 
-Download and install the [.msi installer](http://jetwallet.io/download)
+Download and install the [.msi installer](http://jetwallet.io/msi)
 
 ### Documentation
 For docs, there is [GitHub wiki](https://github.com/JetJet13/JetWallet/wiki) 
@@ -28,4 +31,4 @@ If your feeling generous, here is a bitcoin address 19Ex5TVw4hitSz2JWiv3zNPDPzQn
 I would like to thank the creator of [NBitcoin](https://github.com/MetacoSA/NBitcoin), Nicolas Dorier for which this application is built upon.
 
 ### License
-JetWallet is released under the GNU General Public License v3
+JetWallet is released under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
