@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/JetJet13/JetWallet.svg?branch=master)](https://travis-ci.org/JetJet13/JetWallet)
-[![Coverage Status](https://coveralls.io/repos/github/JetJet13/JetWallet/badge.svg?branch=master)](https://coveralls.io/github/JetJet13/JetWallet?branch=master)
+Note: This project is no longer maintained.
 
 # JetWallet - Bitcoin HD Wallet
 JetWallet is a lightweight Bitcoin SPV Wallet that users can use to store, send and receive bitcoin. It also has the added functionality of creating a testnet wallet. It was built with WPF, C# and XAML.
